@@ -28,6 +28,7 @@ _Comment s'y prendre ?_ <br>En premier lieu il est important de présenté l'ass
 * [Informations relatives - 2](http://users.skynet.be/afrikalux/histo.html)
 * [Fondation Roi Baudoin](http://www.boudewijnstichting.net/fr/Activities/Indirect/Projectaccounts/294450)
 * [Marche Adepts](https://www.routeyou.com/nl-be/route/view/723477/wandelroute/marche-adeps-mariam-faso-circuit-5-km)
+* [Faire des dons](http://www.kadolog.be/fr/node/968563)
 
 * Articles
   * [Houmont: l'ASBL Mariam Faso recherche des boîtes à outils](http://video.lesoir.be/video/x13rajb)
