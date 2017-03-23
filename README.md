@@ -3,10 +3,17 @@ Projet web dans le cadre du cours de DesignWeb_Framework
 ***
 >Ce projet web est la réalisation d'un projet pour un client qui est l'association **Mariam Faso**, on réalisera dans le cadre du cours de Design Web à là Haute École de la province de Liège. Parmis tous les élèves de 2ème année le site répondant le plus au attente du client sera choisis et publier sur la toile.
 ***
+**Localisation**
+* Afrique du Nord et Burkina Faso
+* Localité principale "Lengo"
+
+**Actions**:
+* Construction d'infrasctructure: ils apportent les matérieaux et demandent de l'aide aux villageois.
+
 ## Plan d'attaque
 Le projet va être soumis à plusieurs étapes avant d'atteindre sa forme finale. Voici les recherches et plans élaborés tout au long des étapes suivantes :
 ### Définition
-_Pour qui ?_ <br>Citoyens Belge en priorité et ensuite les citoyens de l'union Européene. Les personnes ciblé sont tous d'abord des personnes du certaines maturité/âge permettant ainsi une collecte de dons. Ensuite nous ciblerons les jeunes pour une participations bénévole au voyage.
+_Pour qui ?_ <br>Citoyens Belge en priorité et ensuite les citoyens de l'union Européene. Les personnes ciblé sont tous d'abord des personnes du certaines maturité/âge permettant ainsi une collecte de dons. Ensuite nous ciblerons les jeunes pour une participations bénévole au voyage et/ou pour des actions de sensibilisation pouvant aider l'agrandissement de ASBL.
 
 _Que mettre en avant ?_ <br>Ce qui sera important de mettre en avant est en premier lieux le secteur d'activité de l'ASBL, ensuite il sera important de permettre au personne de faire un don (_n'importe où_) et pour finir les modalités/but/devoir pour pouvoir voyager.
 
@@ -23,7 +30,7 @@ _Comment s'y prendre ?_ <br>En premier lieu il est important de présenté l'ass
 * [Marche Adepts](https://www.routeyou.com/nl-be/route/view/723477/wandelroute/marche-adeps-mariam-faso-circuit-5-km)
 
 * Articles
-  * [Houmont: l'ASBL Mariam Faso recherche des boîtes à outils](http://video.lesoir.be/video/x13raj)
+  * [Houmont: l'ASBL Mariam Faso recherche des boîtes à outils](http://video.lesoir.be/video/x13rajb)
   * [L'ASBL Mariam Faso et la commune investissent en Afrique Le pays de Marie s'anime au Burkina Faso](http://archives.lesoir.be/sainte-ode-l-asbl-mariam-faso-et-la-commune-investissen_t-20031121-Z0NRXZ.html)
   * [Bastogne: à vos enchères pour Mariam Faso](http://www.lameuse.be/865369/article/regions/luxembourg/actualite/2013-11-23/bastogne-a-vos-encheres-pour-mariam-faso)
   * [Nouvelle dynamique pour Mariam Faso](http://www.lavenir.net/cnt/301142)
