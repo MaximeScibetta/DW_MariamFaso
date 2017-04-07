@@ -1,0 +1,31 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li,
+    &__home,
+    &__agenda,
+    &__don,
+    &__actu,
+    &__contact {
+        width: 150px;
+        background: black;
+        color: white;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid white;
+        &--hover:hover {
+            background: red;
+        }
+        &__submenu {
+            //left: -41px;
+            position: absolute;
+            //top: 61px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
