@@ -1,0 +1,18 @@
+h1{
+    @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+}
+h2{
+    @include rhythm($font-lvl2, ($font-lvl2*1.5) );
+}
+h3{
+    @include rhythm($font-lvl1, ($font-lvl1*1.5) );
+}
+h4{
+
+}
+h5{
+
+}
+p{
+    @include rhythm($font-content, $font-content*1.5);
+}

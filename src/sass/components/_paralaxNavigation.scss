@@ -1,8 +1,10 @@
 div.grid {
-	background-image: url('http://subtlepatterns.com/patterns/small_steps.png');
-	background-repeat: repeat;
+	background-image: url('../images/paysage.jpg');
+	background-repeat: no-repeat;
+    //background-size: cover;
+    //background-position:fixed; 
 	position: fixed;
-	top: 0;
+	top: -350px;
 	left: 0;
 	z-index: -1;
 	width: 100%;
@@ -37,15 +39,13 @@ article{
 	//margin: 0 auto;
 	//position: relative;
 	//z-index: 1;
-    margin-top: 20em;
+    //margin-top: 20em;
     section {
-	    box-shadow: .3em .3em .4em #ddd;
-        margin: 7em 0 0 0;
+	    //box-shadow: .3em .3em .4em #ddd;
+        //margin: 7em 0 0 0;
         padding: 1em;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #ddd;
-        background-color: #fff;
+       // border:1px solid #ddd;
+        //background-color: #fff;
         min-height: 100vh;
     }
 } 

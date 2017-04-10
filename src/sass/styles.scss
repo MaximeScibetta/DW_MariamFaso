@@ -1,40 +1,27 @@
 /************/
-
-
 /***IMPORT***/
-
-
 /************/
 
-
-/****generic****/
-
+/****normalize****/
 @import 'normalize/reset';
 
 /****tools***/
-
-//@import 'tools/baseline';
+@import 'tools/buttons';
+@import 'tools/baseline';
 
 /****settings***/
-
-//@import 'settings/colors';
-//@import 'settings/fontFace';
-//@import 'settings/global';
-
-/****generic****/
-
-//@import 'generic/normalize';
+@import 'settings/colors';
+@import 'settings/fontFace';
+@import 'settings/global';
 
 /****base****/
-
-//@import 'base/headings';
-//@import 'base/links';
-//@import 'base/forms';
+@import 'base/headings';
+@import 'base/links';
+@import 'base/forms';
 
 /****components****/
-
 //@import 'components/pageFooter';
-//@import 'components/pageHeader'; 
+@import 'components/pageHeader'; 
 //@import 'components/pageContact';
 //@import 'components/pageGallery';
 @import 'components/menuDropDown';
@@ -43,6 +30,166 @@
 @import 'components/ajaxNavigation';
 
 /****trumps****/
-
-//@import 'trumps/hideText';
+@import 'trumps/hideText';
 //@import 'settings/responsive';
+body{
+    font-family: 'JosefinSans-Regular';
+    color: #FFFFFF;
+}
+.article{
+    section:first-of-type{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    .intro{
+        &:first-of-type{
+            h3{
+                font-family: 'JosefinSans-Bold';
+                @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+                text-align: center;
+                margin-top: 200px;
+            }
+            p{ 
+                font-family: 'JosefinSans-Light';
+                @include rhythm($font-content, ($font-content*1.5) );
+                text-align: center;
+            }
+            div{
+                width:500px;
+                margin: $spacing-elem auto 0;
+                .btn{
+                    font-family: 'JosefinSans-Bold';
+                    @include button($spacing-unit, #FFFFFF, $yellow, 5px);
+                    width: 150px;
+                    text-transform: uppercase;
+                   &:last-child{
+                    margin-left: 28%;
+                   }
+                }
+            }
+        }
+    }
+    .objectif{  
+        background-color: $base-bcg-color;
+        color: #000000;
+        h3{
+            font-family: 'JosefinSans-Bold';
+            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+            text-align: center;
+            margin-top: $spacing-elem;
+            span{
+                border-bottom: 10px solid $yellow;
+            }
+        }
+        p{
+            @include rhythm($font-content, $font-content*1.5);
+            width: 800px;
+            margin: 0 auto;
+            &:first-of-type{
+                margin-top: 9px;    
+            }
+            &:not(:first-of-type){
+                margin-top: $spacing-unit*3;
+            }
+        }
+        .objectif__container{
+            text-align: center;
+            margin: $spacing-elem 0;
+            &__item{
+                display: inline-block;
+                width: 20%;
+                svg{
+                    width: 50%;
+                    padding: $spacing-unit*2;
+                    border: 10px solid #dcdcdc;
+                    display: block;
+                    margin: 0 auto;
+                    &:hover{
+                        border: 10px solid $blue;
+                        cursor: pointer;
+                    }
+                }
+                h4{
+                    display: inline-block;
+                    @include rhythm($font-lvl1, $font-lvl1*1.5);
+                    border-bottom: 5px solid $blue;
+                }
+                p{
+                    @include rhythm($font-base, $font-base*1.5);
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .about{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-left: 200px;
+        h3{
+            font-family: 'JosefinSans-Bold';
+            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+            text-align: center;
+            margin-top: $spacing-elem;
+            span{
+                 border-bottom: 10px solid $yellow;
+            }
+        }
+        p{
+            width: 800px;
+            &:first-of-type{
+                margin-top: 16px;
+            }
+            &:not(:first-of-type){
+                margin-top: $spacing-unit*3;
+            }
+            &:last-of-type{
+                margin-bottom: $spacing-elem;
+            }
+        }
+        ul{
+            margin: $spacing-unit*3 0;
+            margin-left: 100px;
+            @include rhythm($font-base, $font-base*1.5);
+            li{
+                list-style: circle;
+            }
+        }
+    }
+    .team{
+        background-color: $base-bcg-color;
+        color: #000000;
+        h3{
+            font-family: 'JosefinSans-Bold';
+            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+            text-align: center;
+            margin-top: $spacing-elem;
+            span{
+                 border-bottom: 10px solid $yellow;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// .btn{
+//     @include button(10px, #1abc9c, #3498db, 5px);
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     color: #fff;
+// }
+
+// .btn2{
+//     @include button(10px, #ffd071, #f0776c, 5px);
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     color: #fff;
+// }
+
+// .btn3{
+//     @include button(10px, #3498db, #1abc9c, 5px);
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     color: #fff;
+// }

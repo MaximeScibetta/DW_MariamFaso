@@ -1,0 +1,14 @@
+// FONTS
+$font-base: 16;
+
+$font-micro: 0.75em;
+$font-content: $font-base * 1.5; //24
+$font-lvl1: $font-content * 1.5; //36
+$font-lvl2: $font-lvl1 * 1.5; //54
+$font-lvl3: $font-lvl2 * 1.5; //81
+
+//FONTS FAMILY
+
+//SPACING
+$spacing-unit: 12px;
+$spacing-elem: $spacing-unit*4;
