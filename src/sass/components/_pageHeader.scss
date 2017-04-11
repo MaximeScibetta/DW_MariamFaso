@@ -1,4 +1,6 @@
 header{
     padding: $spacing-unit $spacing-unit $spacing-unit;
     background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: calc(100% - 24px);
 }

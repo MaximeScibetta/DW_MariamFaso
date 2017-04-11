@@ -9,7 +9,7 @@
     &__don,
     &__actu,
     &__contact {
-        width: 210px;
+        width: 18%;
         //background: rgba(0,0,0,0.7);
         color: white;
         position: relative;
@@ -17,6 +17,9 @@
         text-align: center;
         //border: 1px solid white;
         padding: $spacing-unit;
+        &:hover{
+            background-color: $red;
+        }
         &--hover:hover {
             background: $red;
         }
@@ -26,7 +29,7 @@
             top: 40px;  
             background-color: #484848;
             li{
-                width: 210px;
+                width: 216px;
             }
         }
         a {
