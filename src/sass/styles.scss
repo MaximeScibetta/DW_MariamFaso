@@ -29,15 +29,15 @@
 @import 'components/teamEffect';
 @import 'components/ajaxNavigation';
 
-/****pages****/
-@import 'pages/home';
-@import 'pages/dons';
-/****trumps****/
-@import 'trumps/hideText';
+
 body{
     font-family: 'JosefinSans-Regular';
     color: #FFFFFF;
 }
 
-
+/****pages****/
+@import 'pages/home';
+@import 'pages/dons';
+/****trumps****/
+@import 'trumps/hideText';
 @import 'trumps/responsive';

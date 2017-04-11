@@ -16,7 +16,7 @@
         <nav>
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home menu__home"><a href="#">Accueil</a>
+                <li class="menu__home menu__home"><a href="../index.html">Accueil</a>
                     <ul class="menu__home__submenu">
                         <li class="menu__home--hover"><a href="#">À propos</a></li>
                         <li class="menu__home--hover"><a href="#">Objectifs</a></li>
@@ -56,20 +56,29 @@
     </header>
     <article>
         <section class="donIntro">
-            <h3>Pourquoi faire un don ?</h3>
+            <h3>Pourquoi faire un <span>don</span> ?</h3>
+            <div class="container">
+                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh sed tempor.</p>
+                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh sed tempor.</p>
+            </div>
         </section>
-       <section>
-           <div class="containter">
-                <div class="navigation">
+       <section class="ajax">
+           <div class="container">
+                <div class="navigation" id="navigation">
                     <ul>
-                        <li><a href="javascript:void(0);" id="get-help">Faire un don financier</a></li>
-                        <li><a href="javascript:void(0);" id="get-projectTravel">Faire un don matériel</a></li>
-                        <li><a href="javascript:void(0);" id="get-event">Parrainer</a></li>
-                        <li><a href="javascript:void(0);" id="get-temoi">Témoignages</a></li>
+                        <li><a href="#ajaxTarget" id="get-help">Faire un don financier</a></li>
+                        <li><a href="#ajaxTarget" id="get-projectTravel">Faire un don matériel</a></li>
+                        <li><a href="#ajaxTarget" id="get-event">Parrainer</a></li>
+                        <li><a href="#ajaxTarget" id="get-temoi">Témoignages</a></li>
                     </ul>
-                    <img src="" alt="">
+                    <div id="imageNav">
+
+                    </div>
                 </div>
-                <div class="content" id="show-data">
+                <div id="show-data">
+                    <div id="show-title"> <span class="helpUser"> &#x21EE; Clique-ici pour afficher le contenu &#x21EE;</span></div>
+                    <div class="content" id="show-text"></div>
+                    <div id="show-image"> </div>
                 </div>
             </div>
        </section>
