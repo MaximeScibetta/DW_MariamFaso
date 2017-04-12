@@ -2,11 +2,12 @@
 @media (max-width:1550px){
     .article .about{
             padding-left: 5%;
-             width: calc(100% - 5% - 1em);
+            width: calc(100% - 5% - 1em);
         }
 }
-@media (max-width:1400px){
-    .article .about{
+@media (max-width: 1400px){
+    .article{
+        .about{
             .floatLeft{
                 float: none;
                 //display: inline-block;
@@ -19,6 +20,27 @@
                 width: 540px;
             }
         }
+    }
+    article{
+        .ajax{
+            .container{
+                flex-direction: column;
+                .show-data{
+                    .show-image{
+                        justify-content: space-around;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .show-text{
+                        p{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media (max-width: 800px){
     .article .about{
@@ -56,7 +78,31 @@
             }
         }
     }
+    article{
+        .donIntro{
+            .container{
+                width: 97%;
+            }
+        }
+    }
 }
+
+// donsPage
+@media (max-width:1000px){
+    article{
+        .donIntro{
+            .container{
+                margin: 0 auto;
+                flex-direction: column;
+                p{
+                    margin-bottom: $spacing-unit*3;
+                    width: 720px;
+                }
+            }
+        }
+    }
+}
+
 // Bouton INTRO
 @media (max-width:900px){
     .article{

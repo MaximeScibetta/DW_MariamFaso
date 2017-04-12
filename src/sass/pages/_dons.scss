@@ -50,7 +50,7 @@ article{
                 text-align: center;
                 margin-bottom: $spacing-elem;
             }
-           #show-data{
+           .show-data{
                display: flex;
                flex-direction:row;
                justify-content: space-around;
@@ -60,10 +60,10 @@ article{
                     display: block;
                     text-align: center;
                  }
-                #show-title{
+                .show-title{
                     flex-basis: 100%;
                 }
-                #show-text{
+                .show-text{
                     flex-basis: 70%;
                     flex: 1.5;
                     
@@ -86,7 +86,7 @@ article{
                         display: inline-block;
                     }
                 }
-                #show-image{
+                .show-image{
                     //flex-basis: 30%;
                     flex: 1;
                     
@@ -96,7 +96,7 @@ article{
                     justify-content: space-between;
 
                     margin-bottom: $spacing-elem;
-                    margin-right: 5%;
+                    margin:0 5%;
                     // display: flex;
                     // flex-direction: column;
                     // flex-wrap: nowrap;
