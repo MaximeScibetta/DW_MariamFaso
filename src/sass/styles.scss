@@ -8,6 +8,7 @@
 /****tools***/
 @import 'tools/buttons';
 @import 'tools/baseline';
+@import 'tools/gallery';
 
 /****settings***/
 @import 'settings/colors';
@@ -38,6 +39,7 @@ body{
 /****pages****/
 @import 'pages/home';
 @import 'pages/dons';
+@import 'pages/project';
 /****trumps****/
 @import 'trumps/hideText';
 @import 'trumps/responsive';

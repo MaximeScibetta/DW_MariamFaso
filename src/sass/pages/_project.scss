@@ -1,0 +1,342 @@
+article.project{
+    //color: #000;
+    .title{
+       // background-image: url('../images/puits.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -250px;
+        height: 400px;
+        //position: relative;
+    //z-index: -5;
+        h3{
+            background-color: rgba(0,0,0,.5);
+            font-family: 'JosefinSans-Bold';
+            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+            height: calc(100% - 50px);
+            padding: 50px 0 0 50px;
+        }
+        blockquote{
+            position: relative;
+            bottom: 350px;
+            left: 70%;
+            width: 400px;
+            //z-index: 0;
+            p{
+                @include rhythm($font-lvl1, ($font-lvl1*1.5) );
+                text-align: center;
+                display: inline-block;
+            }
+            svg{
+                display: inline-block;
+                width: 15%;
+                height: 25%;
+                fill: #fff;
+                &#quote_1{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &#quote_2{
+                    position: absolute;
+                    bottom: 0;
+                    right: 5px;
+                }
+            }
+        }
+    }
+    .besoin{
+        background-color: #FFFFFF;
+        .statistic{
+            color: #000;
+            padding: $spacing-elem 0;
+            display: flex;
+            flex-direction: row;
+            div{
+                width: 33%;
+                &.statistics{
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                p{
+                    margin-top: $spacing-unit;
+                    text-align: center;
+                }
+                h4{
+                    font-family: 'JosefinSans-Bold';
+                    @include rhythm(115, (115*1.5) );
+                    text-align: center;
+                    margin-bottom: $spacing-elem;
+                }
+                .btn{
+                    color: #000;
+                    font-family: 'JosefinSans-Bold';
+                    @include button($spacing-unit*3, #FFFFFF, $yellow, 5px);
+                    font-size: 20px;
+                    width: 150px;
+                    text-transform: uppercase;
+                    display: block;
+                    margin: 0 auto;
+                }
+                svg{
+                    width: 35%;
+                    display: block;
+                    margin: 0 auto;
+                }
+                p{
+                    text-align: center;
+                    width: 80%;
+                    margin: 0 auto;
+                    &:first-of-type{
+                        margin-bottom: $spacing-unit;
+                    }
+                    &:last-of-type{
+                        margin-top: $spacing-unit;
+                    }
+                }
+            }
+        }
+    }
+    .objectif{
+        background-color: rgba(0,0,0,.5);
+        padding: $spacing-elem 0;
+        display: flex;
+        flex-direction: row;
+        h3{
+            font-family: 'JosefinSans-Bold';
+            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+            text-align: center;
+            margin-bottom: $spacing-elem;
+            flex-basis: 50%;
+            span{
+                border-bottom: 10px solid $yellow;
+            }
+        }
+        p{
+            max-width: 720px;
+            margin: 0 auto;
+            flex-basis: 50%;
+            &:not(:last-of-type){
+                margin-bottom: $spacing-unit*3;
+            }
+        }
+        
+    }
+    .stats{
+        background-color: #FFFFFF;
+        color: #000;
+        padding: $spacing-elem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        div{
+            flex-basis: 20%;
+            .stat{
+                width: 80%;
+                margin: 0 auto;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .gallery{
+        background-color: #FFFFFF;
+        color: #000;
+        h3{
+            font-family: 'JosefinSans-Bold';
+            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+            text-align: center;
+            padding-top: $spacing-elem;
+            margin-bottom: $spacing-elem;
+        }
+        p{
+            width: 500px;
+            text-align: center;
+            margin: $spacing-elem auto;
+        }
+    }
+}
+/*******************/
+/******GALLERY******/
+/*******************/
+$sequenceMobileHeight: 420px;
+$sequenceDesktopHeight: 585px;
+
+.seq {
+  position: relative;
+
+  /* Dimensions */
+  width: 100%;
+  height: $sequenceMobileHeight;
+  max-width: 100%;
+
+  /* Hide anything that goes beyond the boundaries of the Sequence container */
+  overflow: hidden;
+
+  /* Center the Sequence container on the page */
+  margin: 0 auto;
+  padding: 0;
+
+  /* Some basic styles */
+  font-family: sans-serif;
+  //background: #F8F8F8;
+
+  .seq-pagination,
+  .seq-screen,
+  .seq-canvas,
+  .seq-canvas > * {
+    /* Reset the canvas and steps for better browser consistency */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .seq-screen,
+  .seq-canvas,
+  .seq-canvas > * {
+    /* Make the width/height of the screen, canvas, and steps the same size
+     * as the Sequence element */
+    //height: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .seq-canvas {
+
+    /* Reset the font-size to remove 4px from :before and .title */
+    font-size: 0;
+
+    > * {
+      text-align: center;
+
+      /* Stack the steps in the same place (no canvas animation) */
+      position: absolute;
+    }
+
+    
+  }
+
+  .seq-preloader {
+    //background: #F8F8F8;
+  }
+
+  .seq-pagination {
+    /* Hide pagination when JS is disabled*/
+    display: none;
+
+    position: absolute;
+    z-index: 10;
+    bottom: 60px;
+    width: 100%;
+    border: none;
+    text-align: center;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .seq-current {
+      background: #F96D38;
+    }
+
+    > * {
+      margin: 0 4px;
+      padding: 0;
+      display: inline-block;
+      zoom: 1;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      background: none;
+      border: #F96D38 solid 2px;
+      @include prefixed(transition-duration, ".1s");
+      @include prefixed(transition-property, "background-color");
+
+      /* Image replacement */
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+    }
+  }
+
+  &.seq-active {
+    /* when JS is enabled */
+
+    /* Hide anything that goes beyond the boundaries of the Sequence container */
+    overflow: hidden;
+
+    .seq-pagination {
+      /* Show pagination */
+      display: block;
+    }
+
+    .seq-preloader,
+    .seq-pagination {
+      visibility: visible;
+    }
+
+    .seq-preloader.seq-preloaded {
+      visibility: hidden;
+    }
+  }
+
+  .seq-content {
+    /* Default styles for content */
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4%;
+    /* Reset the font-size from 0 back to 16 */
+    font-size: 16px;
+    
+  }
+
+  .seq-title {
+    /* Starting positions */
+    margin: 0 0 .5em 0;
+    display: block;
+    line-height: 1.4;
+    font-size: 1.8em;
+    opacity: 0;
+    @include prefixed(transition-duration, ".4s");
+    @include prefixed(transition-property, "opacity, transform");
+    @include prefixed(transform, "translateX(100px) translateY(0) translateZ(0)");
+  }
+
+  .seq-in {
+    /* Animate in positions for content */
+    .seq-title {
+      opacity: 1;
+      @include prefixed(transform, "translateX(0) translateY(0) translateZ(0)");
+    }
+  }
+
+  .seq-out {
+    /* Animate out positions for content */
+    .seq-title {
+      opacity: 0;
+      @include prefixed(transform, "translateX(-100px) translateY(0) translateZ(0)");
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+
+    /* Make the container 16:9 but no bigger than 90% of the screen height */
+    @include aspect-ratio(16, 9);
+    height: 600px;
+    max-height: 90vh;
+    min-height: $sequenceMobileHeight;
+
+    .seq-pagination > * {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .seq-title {
+      font-size: 2.6em;
+    }
+  }
+}
