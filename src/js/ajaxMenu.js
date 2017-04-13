@@ -41,7 +41,7 @@ $(document).ready(function () {
             var text2 = '<p>' + text2 + '</p>';
             var image1 = '<img src="' + image1 + '" alt="">';
             var image2 = '<img src="' + image2 + '" alt="">';
-            var imageNav = '<img src="' + imageNav + '" alt="" width="645" height="376">';
+            var imageNav = '<img src="' + imageNav + '" alt="" width="645" height="432">';
 
             showTitle.prepend(title);
             showText.append(text, text2);
@@ -104,7 +104,7 @@ $(document).ready(function () {
             var image1 = '<img src="' + image1 + '" alt="">';
             var image2 = '<img src="' + image2 + '" alt="">';
             var image3 = '<img src="' + image3 + '" alt="">';
-            var imageNav = '<img src="' + imageNav + '" alt="" width="645" height="376">';
+            var imageNav = '<img src="' + imageNav + '" alt="" width="645" height="432">';
 
             showTitle.append(title);
             showText.append(text, text2, text3);
@@ -157,7 +157,7 @@ $(document).ready(function () {
             var text2 = '<p>' + text2 + '</p>';
             var image1 = '<img src="' + image1 + '" alt="">';
             var image2 = '<img src="' + image2 + '" alt="">';
-            var imageNav = '<img src="' + imageNav + '" alt="" width="645" height="376">';
+            var imageNav = '<img src="' + imageNav + '" alt="" width="645" height="432">';
 
             showTitle.append(title);
             showText.append(text, text2);
@@ -220,7 +220,7 @@ $(document).ready(function () {
             var image1 = '<img src="' + image1 + '" alt="">';
             var image2 = '<img src="' + image2 + '" alt="">';
             var image3 = '<img src="' + image3 + '" alt="">';
-            var imageNav = '<img src="' + imageNav + '" alt="" width="500" height="376">';
+            var imageNav = '<img src="' + imageNav + '" alt="" width="500" height="432">';
 
             showTitle.append(title); 
             showText.append( text, text2, text3);

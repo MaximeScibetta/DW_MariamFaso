@@ -4,18 +4,16 @@ article{
     .donIntro{
         color: #000000;
         h3{
-            font-family: 'JosefinSans-Bold';
-            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
             text-align: center;
-            margin-bottom: $spacing-elem;
+            margin-bottom: $spacing-unit;
             span{
                  border-bottom: 10px solid $yellow;
             }
         }
         .container{
             width: 1200px;
-            margin: 0 auto $spacing-elem;
-            align-items: center;
+            margin: 0 auto ($spacing-unit*2)+2;
+            //align-items: center;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -30,6 +28,7 @@ article{
     .ajax{
         color: #000000;
         .container{
+            margin-bottom: $spacing-elem;
             .navigation{
                 //width: 50%;
                     ul li a{

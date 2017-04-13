@@ -6,14 +6,11 @@
     .intro{
         &:first-of-type{
             h3{
-                font-family: 'JosefinSans-Bold';
-                @include rhythm($font-lvl3, ($font-lvl3*1.5) );
                 text-align: center;
                 margin-top: 200px;
             }
             p{ 
                 font-family: 'JosefinSans-Light';
-                @include rhythm($font-content, ($font-content*1.5) );
                 text-align: center;
             }
             div{
@@ -36,24 +33,17 @@
         background-color: $base-bcg-color;
         color: #000000;
         h3{
-            font-family: 'JosefinSans-Bold';
-            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
             text-align: center;
             margin-top: $spacing-elem;
+            margin-bottom: 3px;
             span{
                 border-bottom: 10px solid $yellow;
             }
         }
         p{
-            @include rhythm($font-content, $font-content*1.5);
             width: 700px;
-            margin: 0 auto;
-            &:first-of-type{
-                margin-top: 9px;    
-            }
-            &:not(:first-of-type){
-                margin-top: $spacing-unit*3;
-            }
+            margin-right: auto;
+            margin-left: auto;
         }
         &__container{
             //text-align: center;
@@ -61,7 +51,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-            margin: $spacing-elem 0;
+        margin: $spacing-elem 0;
             &__item{
                 //display: inline-block;
                 flex-basis: 25%;
@@ -79,13 +69,12 @@
                     }
                 }
                 h4{
-                    display: inline-block;
-                    @include rhythm($font-lvl1, $font-lvl1*1.5);
+                    @include rhythm($font-lvl1, ($font-lvl1*1.5) );
+                    //display: inline-block;
                     border-bottom: 3px solid $blue;
-                    margin: 0 auto;
+                    margin: 0 auto $spacing-unit*2;
                 }
                 p{
-                    @include rhythm($font-base, $font-base*1.5);
                     width: 90%;
                     text-align: center;
                 }
@@ -108,10 +97,8 @@
                     clear: both;
                 }
         h3{
-            font-family: 'JosefinSans-Bold';
-            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
             text-align: center;
-            margin: $spacing-elem 0;
+            margin: $spacing-elem 0 0;
             span{
                  border-bottom: 10px solid $yellow;
             }
@@ -121,10 +108,7 @@
             p{
                 width: 720px;
                 &:first-of-type{
-                    //margin-top: 16px;
-                }
-                &:not(:first-of-type){
-                    margin-top: $spacing-unit*3;
+                    margin-top: 3px;
                 }
                 &:last-of-type{
                     margin-bottom: $spacing-elem;
@@ -133,7 +117,7 @@
             ul{
                 margin: $spacing-unit*3 0;
                 margin-left: 100px;
-                @include rhythm($font-base, $font-base*1.5);
+                @include rhythm($font-content, $font-content*1.5);
                 li{
                     list-style: circle;
                 }
@@ -152,8 +136,6 @@
         background-color: $base-bcg-color;
         color: #000000;
         h3{
-            font-family: 'JosefinSans-Bold';
-            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
             text-align: center;
             margin-top: $spacing-elem;
             span{

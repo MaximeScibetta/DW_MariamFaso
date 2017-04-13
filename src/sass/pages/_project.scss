@@ -2,16 +2,15 @@ article.project{
     //color: #000;
     .title{
        // background-image: url('../images/puits.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: -250px;
+        //background-repeat: no-repeat;
+        //background-size: cover;
+        //background-position-y: -250px;
+         background-color: rgba(0,0,0,.5);
         height: 400px;
         //position: relative;
     //z-index: -5;
         h3{
-            background-color: rgba(0,0,0,.5);
-            font-family: 'JosefinSans-Bold';
-            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+            //background-color: rgba(0,0,0,.5);
             height: calc(100% - 50px);
             padding: 50px 0 0 50px;
         }
@@ -53,8 +52,11 @@ article.project{
             flex-direction: row;
             div{
                 width: 33%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 &.statistics{
-                    width: 50%;
+                    width: 300px;
                     margin: 0 auto;
                 }
                 p{
@@ -102,8 +104,6 @@ article.project{
         display: flex;
         flex-direction: row;
         h3{
-            font-family: 'JosefinSans-Bold';
-            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
             text-align: center;
             margin-bottom: $spacing-elem;
             flex-basis: 50%;
@@ -117,6 +117,9 @@ article.project{
             flex-basis: 50%;
             &:not(:last-of-type){
                 margin-bottom: $spacing-unit*3;
+            }
+            &:first-of-type{
+                margin-top: $spacing-elem+$spacing-unit+4;
             }
         }
         
@@ -136,6 +139,7 @@ article.project{
             }
             p{
                 text-align: center;
+                margin-top: $spacing-unit*2;
             }
         }
     }
@@ -143,8 +147,6 @@ article.project{
         background-color: #FFFFFF;
         color: #000;
         h3{
-            font-family: 'JosefinSans-Bold';
-            @include rhythm($font-lvl3, ($font-lvl3*1.5) );
             text-align: center;
             padding-top: $spacing-elem;
             margin-bottom: $spacing-elem;
