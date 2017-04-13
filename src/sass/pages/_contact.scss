@@ -1,0 +1,290 @@
+section.contact{
+    color: #000;
+}
+form.contact{
+    //background-color: $blue;
+    //padding: $spacing-el;
+    //margin:$spacing-el auto 0;
+    //width: 400px;
+    display: inline-block;
+    
+label{
+    @include rhythm($font-content, 36);
+    color: $blue;
+}
+label:not(::first-of-type){
+    margin-top: $spacing-unit*3;
+}
+    input, textarea{
+        margin-top: $spacing-unit;
+        min-width: 300px;
+        color: $blue;
+        background-color:#FFFFFF;
+        max-width: 400px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        border: 1px solid $blue;
+        font-family: sans-serif;
+    }
+    legend{
+        @include rhythm($font-lvl1, 72);
+        text-transform: uppercase;
+    }
+    #submit{
+        color: $blue;
+        width: 100%;
+        margin-top: $spacing-unit;
+        display: block;
+    @include rhythm($font-content, 36);
+    }
+}
+
+/*Contact de gauche*/
+.send-button {
+  margin-top: 15px;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  border: none;
+  border-radius: 5px;
+  background-color: $blue;
+}
+.button {
+  width: 100%;
+  height: 100px;
+  transition: all .2s ease-in-out;
+      overflow: hidden;
+}
+.send-text {
+    font:300 24px 'JosefinSans-Bold';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    color:#FFFFFF;
+    height: 50px;
+    vertical-align: middle;
+}
+.send-icon::before{
+    width: 50px;
+    height: 50px;
+    display: block;
+    color:#FFFFFF;
+    font-family: 'Icon';
+    content:'\e98d';
+    margin: 10px auto 0;
+    vertical-align: middle;
+}
+
+.button:hover {
+  transform: translate3d(0px, -50px, 0px);
+}
+/* Contac de droite*/
+ul.contact-info{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 50px;            
+    padding-bottom: $spacing-unit;
+    border-bottom: 1px solid $blue;
+        li{
+            @include rhythm($font-lvl1, 72);
+            margin-top: $spacing-unit;
+        }
+     .localisation::before{
+        display: inline-block;
+        font-family: 'Icon';
+        @include rhythm($font-lvl1, 72);
+        height: 50px;
+        width: 50px;
+        content:'\e947';
+        margin-right: $spacing-unit*2;
+    }
+    .phone::before{
+        display: inline-block;
+        font-family: 'Icon';
+        @include rhythm($font-lvl1, 72);
+        height: 50px;
+        width: 50px;
+        content:'\e942';
+        margin-right: $spacing-unit*2;
+    }
+    .email::before{
+        display: inline-block;
+        font-family: 'Icon';
+        @include rhythm($font-lvl1, 72);
+        height: 50px;
+        width: 50px;
+        content:'\e945';
+        margin-right: $spacing-unit*2;
+    }
+}
+@media screen and (max-width:337px){
+    ul.contact-info{
+        .email::before,
+        .phone::before,
+        .localisation::before{
+            width: 30px;
+        }
+    }
+    .contact .contact-social{
+        width: 100px;
+        li {
+            display: block;
+            margin: 0 auto $spacing-unit auto;
+        }
+    }
+}
+/*CONTACT SOCIAL*/
+div.contact-wrapper{
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+.contact-social{
+        position: absolute;
+        bottom: 90px;
+        right: 75px;
+        font-size: 2.3rem;
+    li{
+        position: relative; 
+        top: 0;
+        left: -20px;
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        margin: 5px 20px 0 auto;
+        line-height: 62px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: $blue;
+        cursor: pointer; 
+        transition: all .2s ease-in-out;
+        a{
+        color:#FFFFFF;
+            &.facebook::before{
+                font-family: 'Icon';
+                font-size: 30px;
+                height: 20px;
+                width: 20px;
+                content:'\ea90';
+                margin-left: 20px;
+            }
+             &.twitter::before{
+                font-family: 'Icon';
+                font-size: 30px;
+                height: 20px;
+                width: 20px;
+                content:'\ea96';
+                margin-left: 20px;
+            }
+             &.instagram::before{
+                font-family: 'Icon';
+                font-size: 30px;
+                height: 20px;
+                width: 20px;
+                content:'\ea92';
+                margin-left: 20px;
+            }
+             &.github::before{
+                font-family: 'Icon';
+                font-size: 30px;
+                height: 20px;
+                width: 20px;
+                content:'\eab0';
+                margin-left: 20px;
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+            opacity: 0;
+            box-shadow: 0 0 0 2px $red;
+            transition: all .2s ease-in-out;
+        }
+        &:hover{
+            background-color:$red; 
+            &::after{
+                opacity: 1;  
+                transform: scale(1.15);
+                transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+            }
+         }
+    }
+}
+@media screen and (max-width:810px){
+    #contact{
+        width: 100%;
+    }
+    form.contact{
+        width: 100%;
+        input, label, textarea{
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+    .contact-info{
+        width: 100%;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+    .contact-social{
+        position: initial;
+        width:360px;
+        margin: 30px auto 0; 
+        li{
+            left:0;
+        }
+    }
+}
+
+@media screen and (max-width:445px){
+    $font-base : 12;
+    $font-content: $font-base * 1.5;
+    $font-lvl1: $font-content * 1.5;
+    $font-lvl2: $font-lvl1 * 1.5;
+    $font-lvl3: $font-lvl2 * 1.5;
+    $spacing-unit: 8px;
+
+    ul.contact-info{ 
+    padding-bottom: $spacing-unit;
+        li{
+            @include rhythm($font-lvl1, 72);
+            margin-top: $spacing-unit;
+        }
+        .localisation::before{
+            @include rhythm($font-lvl1, 72);
+            margin-right: $spacing-unit*2;
+        }
+        .phone::before{
+            @include rhythm($font-lvl1, 72);
+            margin-right: $spacing-unit*2;
+        }
+        .email::before{
+            @include rhythm($font-lvl1, 72);
+            margin-right: $spacing-unit*2;
+        }
+    }
+}
+@media screen and (max-width:380px){
+    .contact-social{
+        width: 317px;
+        li{
+            margin: 5px 9px 0 auto;
+        }
+    }
+}
+@media screen and (max-width:342px){
+    ul.contact-info{
+        .localisation::before,
+        .email::before,
+        .phone::before{
+            margin-right:0;
+        }
+    }
+}

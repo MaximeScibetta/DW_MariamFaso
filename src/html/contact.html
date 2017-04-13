@@ -6,7 +6,7 @@
     <meta name="author" content="Scibetta Maxime">
     <meta name="description" content="Sur cette page vous allez retrouver le site de Pawel Kuczynski">
     <meta name="keywords" content="Netflix, Maxime, Scibetta, bac, infographie, HEPL, Web, Designer, Developement">
-    <title>Mariam Faso - Dons</title>
+    <title>Mariam Faso - Contact</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -20,7 +20,7 @@
                     <ul class="menu__home__submenu">
                         <li class="menu__home--hover"><a href="../index.html#target-3">À propos</a></li>
                         <li class="menu__home--hover"><a href="../index.html#target-2">Objectifs</a></li>
-                        <li class="menu__home--hover"><a href="">Comment puis-je aider ?</a></li>
+                        <li class="menu__home--hover"><a href="../index.html">Comment puis-je aider ?</a></li>
                         <li class="menu__home--hover"><a href="../index.html#target-4">Équipe</a></li>
                     </ul>
                 </li>
@@ -54,38 +54,48 @@
             </ul>
         </nav>
     </header>
-    <article>
-        <section class="donIntro">
-            <h3>Pourquoi faire un <span>don</span> ?</h3>
-            <div class="container">
-                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh sed tempor.</p>
-                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh sed tempor.</p>
+    <article class="">
+        <section class="contact">
+            <h2 id="">Contact l'ASBL</h2>
+            <div class="contact-wrapper" id="contact">
+                <form action="post" class="contact">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" value="" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" value="" placeholder="Votre email">
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    <button class="send-button" id="submit" type="submit" value="Envoyer">
+                    <div class="button">
+                        <span class="send-text">Envoyer</span>
+                        <i class="send-icon"></i>
+                    </div>
+                </form>
+                <ul class="contact-info">
+                    <li class="localisation" >Beaufays | Liège</li>
+                    <li class="phone" >04/368.00.00</li>
+                    <li class="email" >Pascale.dupont@gmail.com</li>
+                </ul>
+                <ul class="contact-social">
+                    <li>
+                        <a href="https://www.facebook.com/" class="facebook"> </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/" class="twitter"> </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" class="instagram"> </a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/" class="github"></a>
+                    </li>
+                </ul>
             </div>
         </section>
-       <section class="ajax">
-           <div class="container">
-                <div class="navigation" id="navigation">
-                    <ul>
-                        <li><a href="#ajaxTarget" id="get-help">Faire un don financier</a></li>
-                        <li><a href="#ajaxTarget" id="get-projectTravel">Faire un don matériel</a></li>
-                        <li><a href="#ajaxTarget" id="get-event">Parrainer</a></li>
-                        <li><a href="#ajaxTarget" id="get-temoi">Témoignages</a></li>
-                    </ul>
-                    <div id="imageNav">
-
-                    </div>
-                </div>
-                <div id="show-data" class="show-data">
-                    <div id="show-title" class="show-title"> <span class="helpUser"> &#x21EE; Clique-ici pour afficher le contenu &#x21EE;</span></div>
-                    <div class="show-text" id="show-text"></div>
-                    <div id="show-image" class="show-image"> </div>
-                </div>
-            </div>
-       </section>
     </article>
 </body>
+
 <script src="../js/jquery-3.2.0.min.js"></script>
 <script src="../js/dropDownMenu.js"></script>
-<script src="../js/ajaxMenu.js"></script>
 
 </html>
