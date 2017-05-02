@@ -16,27 +16,20 @@
         <nav>
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home menu__home"><a href="./index.html">Accueil</a>
-                    <ul class="menu__home__submenu">
-                        <li class="menu__home--hover"><a href="./index.html#target-3">À propos</a></li>
-                        <li class="menu__home--hover"><a href="./index.html#target-2">Objectifs</a></li>
-                        <li class="menu__home--hover"><a href="">Comment puis-je aider ?</a></li>
-                        <li class="menu__home--hover"><a href="./index.html#target-4">Équipe</a></li>
-                    </ul>
-                </li>
+                <li class="menu__home" id="logo"><a href="./index.html"></a></li>
                 <li class="menu__agenda menu__agenda"><a href="#">Agenda</a>
                     <ul class="menu__agenda__submenu">
-                        <li class=" menu__agenda--hover"><a href="# ">Événements</a></li>
+                        <li class=" menu__agenda--hover"><a href="./html/event.html">Événements</a></li>
                         <li class=" menu__agenda--hover"><a href="./html/project.html">Projets</a></li>
-                        <li class=" menu__agenda--hover"><a href="# ">Voyages</a></li>
+                        <li class=" menu__agenda--hover"><a href="./html/travel.html">Voyages</a></li>
                     </ul>
                 </li>
-                <li class="menu__don menu__don"><a href="./html/dons.html">Dons</a>
+                <li class="menu__don menu__don"><a href="./dons.html">Dons</a>
                     <ul class="menu__don__submenu">
-                        <li class="menu__don--hover"><a href="./html/dons.html#ajaxTarget">Dons financier</a></li>
-                        <li class="menu__don--hover"><a href="./html/dons.html#ajaxTarget">Donc matériel</a></li>
-                        <li class="menu__don--hover"><a href="./html/dons.html#ajaxTarget">Parrainer</a></li>
-                        <li class="menu__don--hover"><a href="./html/dons.html#ajaxTarget">Avantages fiscaux</a></li>
+                        <li class="menu__don--hover"><a href="./html/dons_financier.html">Dons financier</a></li>
+                        <li class="menu__don--hover"><a href="./html/dons_materiel.html">Donc matériel</a></li>
+                        <li class="menu__don--hover"><a href="./html/dons_parrainer.html">Parrainer</a></li>
+                        <li class="menu__don--hover"><a href="./html/dons_fiscaux.html">Avantages fiscaux</a></li>
                     </ul>
                 </li>
                 <li class="menu__actu menu__actu"><a href="# ">Actualités</a>
@@ -74,11 +67,21 @@
     <div class="grid" ></div>
     <article class="article">
         <section class="article__intro" id="target-1">
-            <h3>Mariam Faso</h3>
-            <p>ASBL pour améliorer les relations nord-sud.</p>
-            <div>
-                <a href="#target-2" class="btn">Nos objectifs</a>
-                <a href="./html/dons.html" class="btn">Participer</a>
+            <div class="article__intro__container">
+                <h3>Mariam Faso</h3>
+                <p>ASBL pour améliorer les relations nord-sud.</p>
+                <p>Association qui réalise et soutient des projets au Burkina Faso et au Maroc.</p>   
+                <a href="#target-2" class="btn-1">Nos objectifs</a>
+                <a href="./html/dons.html" class="btn-2">Participer</a>
+            </div>
+            <a href="" id="scroll">
+                <div id="scrolldown">
+                    <p>scroll or click</p>
+                    <div class="mouse">
+                        <span><p>↓</p></span>
+                </div>
+            </a>
+                
             </div>
         </section>
         <section class="article__objectif" id="target-2">
@@ -321,12 +324,51 @@
         </section>
         <section class="article__actu">
             <h3 id="target-4">Notre <span>actualité</span></h3>
-            
+            <div class="article__actu__press">
+                <h3 class="article__actu__press__title">Notre <span>presse</span></h3>
+                <ul class="flex-container">
+                    <li class="flex-item">1</li>
+                    <li class="flex-item">2</li>
+                    <li class="flex-item">3</li>
+                    <li class="flex-item">4</li>
+                    <li class="flex-item">5</li>
+                    <li class="flex-item">6</li>
+                </ul>
+            </div>
+            <div class="article__actu__event">
+                <h3 class="article__actu__event__title">Nos <span>événements</span></h3>
+                <ul class="flex-container">
+                    <li class="flex-item">1</li>
+                    <li class="flex-item">2</li>
+                    <li class="flex-item">3</li>
+                    <li class="flex-item">4</li>
+                    <li class="flex-item">5</li>
+                    <li class="flex-item">6</li>
+                </ul>
+            </div>
+            <div class="article__actu__voyage">
+                <h3 class="article__actu__voyage__title">Nos <span>voyages</span></h3>
+                <ul class="flex-container">
+                    <li class="flex-item">1</li>
+                    <li class="flex-item">2</li>
+                    <li class="flex-item">3</li>
+                    <li class="flex-item">4</li>
+                    <li class="flex-item">5</li>
+                    <li class="flex-item">6</li>
+                </ul>
+            </div>
         </section>
     </article>
 </body>
 <script src="./js/jquery-3.2.0.min.js"></script>
 <script src="./js/dropDownMenu.js"></script>
 <script src="./js/paralaxNavigation.js"></script>
-
+<script>
+                    $('a#scroll').click(function() {
+                        $('html,body').animate({
+                            scrollTop: $('#scrolldown').offset().top
+                        }, 2000);
+                        return false;
+                    });
+                </script>
 </html>

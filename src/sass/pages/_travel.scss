@@ -1,0 +1,57 @@
+
+.map {
+  width: 100%;
+  //height: 380px;
+  //margin: calc(50vh - 190px) auto;
+  box-shadow: 0 0 40px -10px black;
+  background: rgb(230, 230, 230);
+  font-family: 'Montserrat', sans-serif;
+  //max-width: calc(100vw - 60px)
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#map {
+  width: 60%;
+  height: 500px;
+  display: inline-block;
+  flex-basis: 60%;
+}
+
+.map-c {
+  //float: right;
+  width: 38%;
+  flex-basis: 38%;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  color: #000;
+  margin-left: 20px;
+  .btn-2{
+      color: #000;
+      font-family: 'JosefinSans-Regular';
+      @include button($spacing-unit*1.5 $spacing-elem, #000, rgba(0,0,0,0), 5px);
+      width: 150px;
+      text-transform: uppercase;
+      margin-left: 4px;
+      margin-top: $spacing-unit*3;
+      display: inline-block;
+      letter-spacing: 1px;
+  }
+  .btn-1{
+      display: inline-block;
+      color: #000;
+      font-family: 'JosefinSans-Regular';
+      @include button($spacing-unit*1.5 $spacing-elem*2, $yellow, $yellow, 5px);
+      width: 150px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      //margin-top: $spacing-unit*3;
+  }
+  p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 95%;
+  }
+}

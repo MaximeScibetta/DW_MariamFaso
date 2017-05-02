@@ -1,18 +1,8 @@
 $(document).ready(function() {
-    $(".menu__home__submenu").hide();
     $(".menu__agenda__submenu").hide();
     $(".menu__don__submenu").hide();
     $(".menu__actu__submenu").hide();
     $(".menu__contact__submenu").hide();
-
-    /*HOME*/
-    $(".menu__home").mouseover(function() {
-        $(".menu__home__submenu").show();
-    });
-
-    $(".menu__home").mouseleave(function() {
-        $(".menu__home__submenu").hide();
-    });
 
     /*AGENDA*/
     $(".menu__agenda").mouseover(function() {

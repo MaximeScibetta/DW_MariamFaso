@@ -6,8 +6,48 @@
             width: calc(100%  - 1em);
         }
     }
+    .project{
+            &__title{
+                h3{
+                    height: auto;
+                }
+                div{
+                    position: initial;
+                    width: 800px;
+                    margin: 0 auto;
+                    p{
+                        display: inline-block;
+                        margin-left: 48px;
+                    }
+                    svg{
+                        width: 7%;
+                        display: inline-block;
+                        &#quote_1{
+                            position: initial;
+                            top: 0;
+                            left: 0;
+                        }
+                        &#quote_2{
+                            position: initial;
+                            margin-left: 100%;
+                        }
+                    }
+                }
+            }
+        }
 }
 @media (max-width: 1400px){
+    .project{
+        &__besoin{
+            .statistic{
+                div{
+                    p{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
     .article{
         &__about{
             .floatLeft{
@@ -42,44 +82,30 @@
                 }
             }
         }
-        .project{
-            &__title{
-                h3{
-                    height: auto;
-                }
-                div{
-                    position: initial;
-                    width: 800px;
-                    margin: 0 auto;
-                    p{
-                        display: inline-block;
-                        margin-left: 48px;
-                    }
-                    svg{
-                        width: 7%;
-                        display: inline-block;
-                        &#quote_1{
-                            position: initial;
-                            top: 0;
-                            left: 0;
-                        }
-                        &#quote_2{
-                            position: initial;
-                            margin-left: 100%;
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 @media (max-width:1100px){
     .project{
+        &__besoin{
+            .statistic{
+                flex-direction: column;
+                div{
+                    h4 span{
+                        border-bottom: 10px solid $yellow;
+                    }
+                    width: 80%;
+                    margin: 0 auto;
+                    &+div{
+                        margin-top: $spacing-elem*2;
+                    }
+                }
+            }
+        }
         &__objectif{
             flex-direction: column;
             h3{
                 flex-basis: 100%;
-                margin-bottom: 0;
+               // margin-bottom: $spacing-elem;
             }
             p{
                 flex-basis: 100%;

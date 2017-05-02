@@ -18,7 +18,7 @@
             position: relative;
             bottom: 350px;
             left: 70%;
-            width: 400px;
+            width: 460px;
             z-index: 0;
             p{
                 @include rhythm($font-lvl1, ($font-lvl1*1.5) );
@@ -51,7 +51,7 @@
             display: flex;
             flex-direction: row;
             div{
-                width: 33%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -71,8 +71,8 @@
                 }
                 .btn{
                     color: #000;
-                    font-family: 'JosefinSans-Bold';
-                    @include button($spacing-unit*3, #FFFFFF, $yellow, 5px);
+                    font-family: 'JosefinSans-Regular';
+                    @include button($spacing-unit*1.5 $spacing-elem*3, $yellow, $yellow, 5px);
                     font-size: 20px;
                     width: 150px;
                     text-transform: uppercase;
@@ -80,13 +80,16 @@
                     margin: 0 auto;
                 }
                 svg{
-                    width: 35%;
+                    width: 10%;
                     display: block;
                     margin: 0 auto;
+                    position: absolute;
+                    top: 115px;
+                    right: 428px;
                 }
                 p{
                     text-align: center;
-                    width: 80%;
+                    width: 60%;
                     margin: 0 auto;
                     &:first-of-type{
                         margin-bottom: $spacing-unit;
@@ -95,6 +98,9 @@
                         margin-top: $spacing-unit;
                     }
                 }
+            }
+            div+div{
+                position: relative;
             }
         }
     }

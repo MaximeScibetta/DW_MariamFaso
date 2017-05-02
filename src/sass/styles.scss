@@ -24,7 +24,7 @@
 //@import 'components/pageFooter';
 @import 'components/pageHeader'; 
 //@import 'components/pageContact';
-//@import 'components/pageGallery';
+@import 'components/widget';
 @import 'components/menuDropDown';
 @import 'components/paralaxNavigation';
 @import 'components/teamEffect';
@@ -41,6 +41,8 @@ body{
 @import 'pages/dons';
 @import 'pages/project';
 @import 'pages/contact';
+@import 'pages/travel';
+@import 'pages/_press';
 /****trumps****/
 @import 'trumps/hideText';
 @import 'trumps/responsive';
