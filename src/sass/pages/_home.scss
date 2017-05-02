@@ -3,7 +3,7 @@
     section:first-of-type{
             background-color: rgba(0, 0, 0, 0.5);
         }
-    .intro{
+    &__intro{
         &:first-of-type{
             h3{
                 text-align: center;
@@ -29,13 +29,13 @@
             }
         }
     }
-    .objectif{  
+    &__objectif{  
         background-color: $base-bcg-color;
         color: #000000;
         h3{
             text-align: center;
             margin-top: $spacing-elem;
-            margin-bottom: 3px;
+            margin-bottom:$spacing-unit*3;
             span{
                 border-bottom: 10px solid $yellow;
             }
@@ -81,11 +81,11 @@
             }
         }
     }
-    .about{
+    &__about{
         background-color: rgba(0, 0, 0, 0.5);
         padding-left: 10%;
             //float: left;
-            width: calc(100% - 10% - 1em);
+            width: calc(100% -10%- 1em);
             //height: 1200px;
                 &:before{
                     content: " ";
@@ -99,12 +99,15 @@
         h3{
             text-align: center;
             margin: $spacing-elem 0 0;
+            margin-bottom:$spacing-unit*3;
             span{
                  border-bottom: 10px solid $yellow;
             }
         }
         .floatLeft{
-                float: left; width:57% ;
+                float: left; 
+                width:57% ;
+                margin-left: $spacing-elem;
             p{
                 width: 720px;
                 &:first-of-type{
@@ -132,12 +135,13 @@
             }
         }
     }
-    .team{
+    &__actu{
         background-color: $base-bcg-color;
         color: #000000;
         h3{
             text-align: center;
             margin-top: $spacing-elem;
+            margin-bottom:$spacing-unit*3;
             span{
                  border-bottom: 10px solid $yellow;
             }

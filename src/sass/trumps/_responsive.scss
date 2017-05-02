@@ -1,13 +1,15 @@
 // About
 @media (max-width:1550px){
-    .article .about{
+    .article{
+        &__about{
             padding-left: 5%;
-            width: calc(100% - 5% - 1em);
+            width: calc(100%  - 1em);
         }
+    }
 }
 @media (max-width: 1400px){
     .article{
-        .about{
+        &__about{
             .floatLeft{
                 float: none;
                 //display: inline-block;
@@ -40,12 +42,12 @@
                 }
             }
         }
-        &.project{
-            .title{
+        .project{
+            &__title{
                 h3{
                     height: auto;
                 }
-                blockquote{
+                div{
                     position: initial;
                     width: 800px;
                     margin: 0 auto;
@@ -72,8 +74,8 @@
     }
 }
 @media (max-width:1100px){
-    article.project{
-        .objectif{
+    .project{
+        &__objectif{
             flex-direction: column;
             h3{
                 flex-basis: 100%;
@@ -86,7 +88,7 @@
                 }
             }
         }
-        .stats{
+        &__stats{
             flex-direction: column;
             div{
                 flex-basis: 100%;
@@ -105,20 +107,24 @@
     }
 }
 @media (max-width: 800px){
-    .article .about{
-        .floatLeft{
-             width: 100%;
-            p{
+    .article{
+        &__about{
+            .floatLeft{
                 width: 100%;
+                p{
+                    width: 100%;
+                }
             }
-        }
-    }
+        }    
+    } 
 }
 @media (max-width:900px){
-    .article .about{
-        padding-left: 1em;
-        width: calc(100% - 2em);
-    }
+    .article{
+        &__about{
+            padding-left: 1em;
+            width: calc(100% - 2em);
+        }
+    } 
 }
 
 // DropAndDown Menu
@@ -168,7 +174,7 @@
 // Bouton INTRO
 @media (max-width:900px){
     .article{
-        .intro{
+        &__intro{
             &:first-of-type{
                 div{
                     width:500px;
@@ -180,7 +186,7 @@
                 }
             }
         }
-        .objectif{
+        &__objectif{
             &__container{
             flex-direction: row;
             justify-content: space-between;
