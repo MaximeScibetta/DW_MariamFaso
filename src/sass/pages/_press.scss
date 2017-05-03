@@ -4,7 +4,7 @@
     }
 }
 .presse_content{
-    .presse_content__flex {
+    &__flex {
     display: flex;
     flex-direction: row;
     height: 400px;
@@ -20,7 +20,7 @@
         transform: translateY(-50%) translateX(-50%);
         transition: left .5s;
         transition-timing-function: ease-in-out;
-        //position: fixed;
+        position: relative;
         .image {
             height: 320px;
             width: 500px;
@@ -36,27 +36,30 @@
                 }
             }
         }
-        .button-overlay {
-            z-index: 10;
-            position: absolute;
-            height: 120px;
-            width: 50px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            font-size: 3em;
-            align-items: center;
-            display: flex;
-            opacity: 0.9;
-            top: 40%;
-            cursor: pointer;
-            }
-        .left {
-            left: 0;
+    .button-overlay {
+        z-index: 10;
+        position: absolute;
+        height: 120px;
+        width: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 3em;
+        align-items: center;
+        display: flex;
+        opacity: 0.9;
+        top: 40%;
+        cursor: pointer;
         }
-
-        .right {
-            right: 0;
-        }
+    .left {
+        left: 0;
     }
+    .right {
+        right: 0;
+    }
+}
 
+}
+.window{
+    width: 100%;
+    overflow: hidden;
 }
