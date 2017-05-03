@@ -1,290 +1,196 @@
-section.contact{
+section.contact {
     color: #000;
 }
-form.contact{
-    //background-color: $blue;
-    //padding: $spacing-el;
-    //margin:$spacing-el auto 0;
-    //width: 400px;
-    display: inline-block;
-    
-label{
-    @include rhythm($font-content, 36);
-    color: $blue;
-}
-label:not(::first-of-type){
-    margin-top: $spacing-unit*3;
-}
-    input, textarea{
-        margin-top: $spacing-unit;
-        min-width: 300px;
-        color: $blue;
-        background-color:#FFFFFF;
-        max-width: 400px;
-        letter-spacing: 1px;
-        border-radius: 5px;
-        border: 1px solid $blue;
-        font-family: sans-serif;
-    }
-    legend{
-        @include rhythm($font-lvl1, 72);
-        text-transform: uppercase;
-    }
-    #submit{
-        color: $blue;
-        width: 100%;
-        margin-top: $spacing-unit;
-        display: block;
-    @include rhythm($font-content, 36);
-    }
-}
 
-/*Contact de gauche*/
-.send-button {
-  margin-top: 15px;
-  height: 50px;
-  width: 100%;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-  border: none;
-  border-radius: 5px;
-  background-color: $blue;
-}
-.button {
-  width: 100%;
-  height: 100px;
-  transition: all .2s ease-in-out;
-      overflow: hidden;
-}
-.send-text {
-    font:300 24px 'JosefinSans-Bold';
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    overflow: hidden;
-    color:#FFFFFF;
-    height: 50px;
-    vertical-align: middle;
-}
-.send-icon::before{
-    width: 50px;
-    height: 50px;
-    display: block;
-    color:#FFFFFF;
-    font-family: 'Icon';
-    content:'\e98d';
-    margin: 10px auto 0;
-    vertical-align: middle;
-}
-
-.button:hover {
-  transform: translate3d(0px, -50px, 0px);
-}
-/* Contac de droite*/
-ul.contact-info{
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 0 0 50px;            
-    padding-bottom: $spacing-unit;
-    border-bottom: 1px solid $blue;
-        li{
-            @include rhythm($font-lvl1, 72);
-            margin-top: $spacing-unit;
-        }
-     .localisation::before{
-        display: inline-block;
-        font-family: 'Icon';
-        @include rhythm($font-lvl1, 72);
-        height: 50px;
-        width: 50px;
-        content:'\e947';
-        margin-right: $spacing-unit*2;
-    }
-    .phone::before{
-        display: inline-block;
-        font-family: 'Icon';
-        @include rhythm($font-lvl1, 72);
-        height: 50px;
-        width: 50px;
-        content:'\e942';
-        margin-right: $spacing-unit*2;
-    }
-    .email::before{
-        display: inline-block;
-        font-family: 'Icon';
-        @include rhythm($font-lvl1, 72);
-        height: 50px;
-        width: 50px;
-        content:'\e945';
-        margin-right: $spacing-unit*2;
-    }
-}
-@media screen and (max-width:337px){
-    ul.contact-info{
-        .email::before,
-        .phone::before,
-        .localisation::before{
-            width: 30px;
-        }
-    }
-    .contact .contact-social{
-        width: 100px;
-        li {
-            display: block;
-            margin: 0 auto $spacing-unit auto;
-        }
-    }
-}
-/*CONTACT SOCIAL*/
-div.contact-wrapper{
-    width: 900px;
+// Grid
+@mixin grid($column) {
+    width: (100% / 12) * $column;
     margin: 0 auto;
-    position: relative;
 }
-.contact-social{
-        position: absolute;
-        bottom: 90px;
-        right: 75px;
-        font-size: 2.3rem;
-    li{
-        position: relative; 
-        top: 0;
-        left: -20px;
-        display: inline-block;
-        height: 70px;
-        width: 70px;
-        margin: 5px 20px 0 auto;
-        line-height: 62px;
-        border-radius: 50%;
-        color: #fff;
-        background-color: $blue;
-        cursor: pointer; 
-        transition: all .2s ease-in-out;
-        a{
-        color:#FFFFFF;
-            &.facebook::before{
-                font-family: 'Icon';
-                font-size: 30px;
-                height: 20px;
-                width: 20px;
-                content:'\ea90';
-                margin-left: 20px;
-            }
-             &.twitter::before{
-                font-family: 'Icon';
-                font-size: 30px;
-                height: 20px;
-                width: 20px;
-                content:'\ea96';
-                margin-left: 20px;
-            }
-             &.instagram::before{
-                font-family: 'Icon';
-                font-size: 30px;
-                height: 20px;
-                width: 20px;
-                content:'\ea92';
-                margin-left: 20px;
-            }
-             &.github::before{
-                font-family: 'Icon';
-                font-size: 30px;
-                height: 20px;
-                width: 20px;
-                content:'\eab0';
-                margin-left: 20px;
-            }
+
+// Transition Ease
+@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
+    -webkit-transition: $attr $time $curve;
+    -moz-transition: $attr $time $curve;
+    -o-transition: $attr $time $curve;
+    -ms-transition: $attr $time $curve;
+    transition: $attr $time $curve;
+}
+
+// //-- Lato --//
+// @mixin lato-1 {
+//     font-family: 'Lato', sans-serif;
+//     font-weight: 100;
+// }
+// @mixin lato-1-i {
+//     @include lato-1;
+//     font-style: italic;
+// }
+// @mixin lato-3 {
+//     font-family: 'Lato', sans-serif;
+//     font-weight: 300;
+// }
+// @mixin lato-3-i {
+//     @include lato-3;
+//     font-style: italic;
+// }
+// @mixin lato-4 {
+//     font-family: 'Lato', sans-serif;
+//     font-weight: 400;
+// }
+// @mixin lato-4-i {
+//     @include lato-4;
+//     font-style: italic;
+// }
+// @mixin lato-7 {
+//     font-family: 'Lato', sans-serif;
+//     font-weight: 700;
+// }
+// @mixin lato-7-i {
+//     @include lato-7;
+//     font-style: italic;
+// }
+// @mixin lato-9 {
+//     font-family: 'Lato', sans-serif;
+//     font-weight: 900;
+// }
+// @mixin lato-9-i {
+//     @include lato-9;
+//     font-style: italic;
+// }
+// Colors
+$blue:#313A3D;
+$orange:#FD9638;
+$dark-orange:darken($orange, 20%);
+$grey:#B6B6B6;
+$light-grey:lighten($grey, 15%);
+$background:#efefef;
+$field-color:#E8E9EA;
+body.contact {
+    background: $background;
+    //font-size: 62.5%;
+    //@include lato-3;
+    color: $grey;
+    section {
+        background: white;
+        margin: 60px auto 120px;
+        border-top: 15px solid $blue;
+        text-align: center;
+        padding: 50px 0 110px;
+        width: 80%;
+        max-width: 1100px;
+        h1 {
+            margin-bottom: 40px;
+            font-size: 4em;
+            text-transform: uppercase;
+            //@include lato-1;
         }
-        &::after{
-            content: '';
+    }
+}
+
+// Form
+form {
+    @include grid(7);
+    .field {
+        width: 100%;
+        position: relative;
+        margin-bottom: 15px;
+        $hover-label-width: 18%;
+        $placeholder-bumper: 1.5%;
+        $label-padding: 18px;
+        // Label
+        label {
+            text-transform: uppercase;
             position: absolute;
             top: 0;
             left: 0;
-            width: 70px;
-            height: 70px;
-            line-height: 70px;
-            border-radius: 50%;
-            opacity: 0;
-            box-shadow: 0 0 0 2px $red;
-            transition: all .2s ease-in-out;
-        }
-        &:hover{
-            background-color:$red; 
-            &::after{
-                opacity: 1;  
-                transform: scale(1.15);
-                transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-            }
-         }
-    }
-}
-@media screen and (max-width:810px){
-    #contact{
-        width: 100%;
-    }
-    form.contact{
-        width: 100%;
-        input, label, textarea{
+            background: $blue;
             width: 100%;
-            min-width: 100%;
+            padding: ($label-padding + 0px) 0;
+            font-size: 1.45em;
+            letter-spacing: 0.075em;
+            @include ease(333ms);
+            // Checkmark
+            +span {
+                font-family: 'SSStandard';
+                opacity: 0;
+                color: white;
+                display: block;
+                position: absolute;
+                top: 12px;
+                left: 7%;
+                font-size: 2.5em;
+                text-shadow: 1px 2px 0 $dark-orange;
+                @include ease(333ms);
+            }
+        }
+        // Fields
+        input[type="text"],
+        textarea {
+            border: none;
+            background: $field-color;
+            width: 100% - $hover-label-width - $placeholder-bumper;
+            margin: 0;
+            padding: $label-padding 0;
+            padding-left: $hover-label-width + $placeholder-bumper;
+            color: $blue;
+            font-size: 1.4em;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            &#msg {
+                height: 18px;
+                resize: none;
+                @include ease(333ms);
+            }
+            // Focus and JS Toggle Class
+            &:focus,
+            &.focused {
+                outline: none;
+                &#msg {
+                    padding-bottom: 150px;
+                }
+                +label {
+                    width: $hover-label-width;
+                    background: $orange;
+                    color: $blue;
+                }
+            }
+            // JS Toggle Class
+            &.focused {
+                +label {
+                    color: $orange;
+                }
+            }
+        }
+        // Field Hover
+        &:hover {
+            label {
+                width: $hover-label-width;
+                background: $blue;
+                color: white;
+            }
         }
     }
-    .contact-info{
-        width: 100%;
-        display: block !important;
-        margin: 0 auto !important;
-    }
-    .contact-social{
-        position: initial;
-        width:360px;
-        margin: 30px auto 0; 
-        li{
-            left:0;
+    // Submit Button
+    input[type="submit"] {
+        background: $orange;
+        color: white;
+        -webkit-appearance: none;
+        border: none;
+        text-transform: uppercase;
+        position: relative;
+        padding: 13px 50px;
+        font-size: 1.4em;
+        letter-spacing: 0.1em;
+        //@include lato-3;
+        @include ease;
+        &:hover {
+            background: $blue;
+            color: $orange;
         }
-    }
-}
-
-@media screen and (max-width:445px){
-    $font-base : 12;
-    $font-content: $font-base * 1.5;
-    $font-lvl1: $font-content * 1.5;
-    $font-lvl2: $font-lvl1 * 1.5;
-    $font-lvl3: $font-lvl2 * 1.5;
-    $spacing-unit: 8px;
-
-    ul.contact-info{ 
-    padding-bottom: $spacing-unit;
-        li{
-            @include rhythm($font-lvl1, 72);
-            margin-top: $spacing-unit;
-        }
-        .localisation::before{
-            @include rhythm($font-lvl1, 72);
-            margin-right: $spacing-unit*2;
-        }
-        .phone::before{
-            @include rhythm($font-lvl1, 72);
-            margin-right: $spacing-unit*2;
-        }
-        .email::before{
-            @include rhythm($font-lvl1, 72);
-            margin-right: $spacing-unit*2;
-        }
-    }
-}
-@media screen and (max-width:380px){
-    .contact-social{
-        width: 317px;
-        li{
-            margin: 5px 9px 0 auto;
-        }
-    }
-}
-@media screen and (max-width:342px){
-    ul.contact-info{
-        .localisation::before,
-        .email::before,
-        .phone::before{
-            margin-right:0;
+        &:focus {
+            outline: none;
+            background: $dark-orange;
         }
     }
 }

@@ -11,13 +11,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body>
+<body class="contact">
     <header>
         <nav>
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home" id="logo"><a href="../index.html"></a></li>
-                <li class="menu__home__subemenu" ><a href="../index.html">Accueil</a></li>
+                <li class="menu__home" id="logo">
+                    <a href="../index.html"></a>
+                </li>
+                <li class="menu__home__subemenu"><a href="../index.html">Accueil</a></li>
                 <li class="menu__agenda"><a href="./agenda.html">Agenda</a>
                     <ul class="menu__agenda__submenu">
                         <li class=" menu__agenda--hover"><a href="./event.html">Événements</a></li>
@@ -49,47 +51,199 @@
         </nav>
     </header>
     <article class="">
-        <section class="contact">
-            <h2 id="">Contact l'ASBL</h2>
-            <div class="contact-wrapper" id="contact">
-                <form action="post" class="contact">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" value="" placeholder="Votre nom">
+        <section class="contact" id="hire">
+            <h1>Contact Me</h1>
+            <form>
+                <div class="field name-box">
+                    <input type="text" id="name" placeholder="Who Are You?" />
+                    <label for="name">Name</label>
+                    <span class="ss-icon">Name</span>
+                </div>
+                <div class="field email-box">
+                    <input type="text" id="email" placeholder="name@email.com" />
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" value="" placeholder="Votre email">
-                    <label for="message">Votre message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
-                    <button class="send-button" id="submit" type="submit" value="Envoyer">
-                    <div class="button">
-                        <span class="send-text">Envoyer</span>
-                        <i class="send-icon"></i>
+                    <span class="ss-icon">Email</span>
+                </div>
+                <div class="field msg-box">
+                    <textarea id="msg" rows="4" placeholder="Your message goes here..."></textarea>
+                    <label for="msg">Message</label>
+                    <span class="ss-icon">Message</span>
+                </div>
+                <input class="button" type="submit" value="Send" />
+            </form>
+        </section>
+        <section class="widget" id="target-2">
+            <div class="widget__slide slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+                <div class="widget__slide__container clearfix">
+                    <div class="content grid_2 widget__slide__container__head" id="contact-carClick">
+                        <div class="icon-car"></div>
+                        <p>Dons</p>
                     </div>
-                </form>
-                <ul class="contact-info">
-                    <li class="localisation" >Beaufays | Liège</li>
-                    <li class="phone" >04/368.00.00</li>
-                    <li class="email" >Pascale.dupont@gmail.com</li>
-                </ul>
-                <ul class="contact-social">
-                    <li>
-                        <a href="https://www.facebook.com/" class="facebook"> </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/" class="twitter"> </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" class="instagram"> </a>
-                    </li>
-                    <li>
-                        <a href="https://www.github.com/" class="github"></a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="content grid_2 widget__slide__container__head active" id="contact-mapClick">
+                        <div class="icon-map"></div>
+                        <p>Map</p>
+                    </div>
+                    <div class="content grid_2 widget__slide__container__head" id="contact-busClick">
+                        <div class="icon-bus"></div>
+                        <p>Événements</p>
+                    </div>
+                    <div class="content grid_2 widget__slide__container__head" id="contact-bikeClick">
+                        <div class="icon-bike-2"></div>
+                        <p>Voyages</p>
+                    </div>
+                    <div class="content grid_2 widget__slide__container__head" id="contact-phoneClick">
+                        <div class="icon-phone"></div>
+                        <p>Presse</p>
+                    </div>
+                    <div class="content grid_2 widget__slide__container__head omega" id="contact-mailClick">
+                        <div class="icon-mail"></div>
+                        <p>Contact</p>
+                    </div>
+                    <div class="content grid_12 widget__slide__container__map" id="contact-map">
+                        <div class="info">
+                            <h4>Localisation</h4>
+                            <p class="information">
+                                <span class="icon-location"> Adresse :</span> Rue du widget, 4700 Bastogne
+                            </p>
+                            <p class="information">
+                                <span class="icon-phone-2"> Téléphone : </span> (+32) 4 94 26 31 38
+                            </p>
+                            <a class="btn" href="http://goo.gl/maps/8GlbZ" target="_blank">Intinéraire</a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="grid_8 omega">
+                            <div id="map_canvas"></div>
+                        </div>
+                    </div>
+                    <div class="content grid_12 widget__slide__container__map dn" id="contact-car">
+                        <div class="info">
+                            <h4>CAR</h4>
+                            <p class="information"><span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.</p>
+                            <div class="btn"><span class="icon-checkmark"></span> Car Park</div>
+                        </div>
+                        <div class="grid_8 omega">
+                            <div class="grid_6 omega">
+                                Lorem ipsum Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+                                montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                <a class="btn" href="http://goo.gl/maps/8GlbZ" target="_blank">Get Direction</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content grid_12 widget__slide__container__map dn" id="contact-bus">
+                        <div class="info">
+                            <h4>BUS</h4>
+                            <p class="information"><span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.</p>
+                            <div class="btn"><span class="icon-checkmark"></span> OTOPARK MEVCUT</div>
+                        </div>
+                        <div class="grid_8 omega">
+                            <div class="grid_6 omega" id="scroll2">
+                                Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo,
+                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id
+                                nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur
+                                est at lobortis. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.
+                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+                                risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content grid_12 widget__slide__container__map dn" id="contact-bike">
+                        <div class="info">
+                            <h4>BIKE</h4>
+                            <p class="information"><span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.</p>
+                            <div class="btn"><span class="icon-checkmark"></span> BİSİKLETLİK MEVCUT</div>
+                        </div>
+                        <div class="grid_8 omega">
+                            <div class="grid_6 omega">
+                                <span class="icon-calendar"> Maecenas faucibus mollis interdum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content grid_12 widget__slide__container__map dn" id="contact-phone">
+                        <div class="info">
+                            <h4>TELEPHONE</h4>
+                            <p class="information"><span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.</p>
+                            </div>
+                            <div class="grid_8 omega">
+                                <div class="grid_6 omega">0 (123) 456 789</div>
+                            </div>
+                        </div>
+                        <div class="content grid_12 widget__slide__container__map dn" id="contact-mail">
+                            <div class="info">
+                                <h4>E-MAIL</h4>
+                                <p class="information"><span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.</p>
+                            </div>
+                            <div class="grid_8 omega">
+                                <div class="grid_6 omega"><a href="mailto:mail@loremipsum.com?Subject=Hello" class="btn">mail@loremipsum.com</a></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <footer class="content grid_12">
+                            <div class="btn2">&copy; Copyright</div>
+                            <hr/>
+                        </footer>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         </section>
     </article>
 </body>
 
 <script src="../js/jquery-3.2.0.min.js"></script>
 <script src="../js/dropDownMenu.js"></script>
+<script src="../js/widget.js"></script>
+<script>
+    // Input Lock
+    $('textarea').blur(function() {
+        $('#hire textarea').each(function() {
+            $this = $(this);
+            if (this.value != "") {
+                $this.addClass('focused');
+                $('textarea + label + span').css({
+                    'opacity': 1
+                });
+            } else {
+                $this.removeClass('focused');
+                $('textarea + label + span').css({
+                    'opacity': 0
+                });
+            }
+        });
+    });
+
+    $('#hire .field:first-child input').blur(function() {
+        $('#hire .field:first-child input').each(function() {
+            $this = $(this);
+            if (this.value != '') {
+                $this.addClass('focused');
+                $('.field:first-child input + label + span').css({
+                    'opacity': 1
+                });
+            } else {
+                $this.removeClass('focused');
+                $('.field:first-child input + label + span').css({
+                    'opacity': 0
+                });
+            }
+        });
+    });
+
+    $('#hire .field:nth-child(2) input').blur(function() {
+        $('#hire .field:nth-child(2) input').each(function() {
+            $this = $(this);
+            if (this.value != '') {
+                $this.addClass('focused');
+                $('.field:nth-child(2) input + label + span').css({
+                    'opacity': 1
+                });
+            } else {
+                $this.removeClass('focused');
+                $('.field:nth-child(2) input + label + span').css({
+                    'opacity': 0
+                });
+            }
+        });
+    });
+</script>
 
 </html>
