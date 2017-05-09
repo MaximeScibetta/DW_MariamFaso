@@ -1,42 +1,52 @@
 /************/
+
+
 /***IMPORT***/
+
+
 /************/
 
+
 /****normalize****/
+
 @import 'normalize/reset';
 
 /****tools***/
+
 @import 'tools/buttons';
 @import 'tools/baseline';
 @import 'tools/gallery';
 
 /****settings***/
+
 @import 'settings/colors';
 @import 'settings/fontFace';
 @import 'settings/global';
 
 /****base****/
+
 @import 'base/headings';
 @import 'base/links';
 @import 'base/forms';
 
 /****components****/
+
 //@import 'components/pageFooter';
-@import 'components/pageHeader'; 
+@import 'components/pageHeader';
 //@import 'components/pageContact';
 @import 'components/widget';
 @import 'components/menuDropDown';
 @import 'components/paralaxNavigation';
 @import 'components/teamEffect';
 @import 'components/ajaxNavigation';
-
-
-body{
+body {
     font-family: 'JosefinSans-Regular';
     color: #FFFFFF;
 }
 
+
 /****pages****/
+
 @import 'pages/home';
 @import 'pages/dons';
 @import 'pages/project';
@@ -44,6 +54,8 @@ body{
 @import 'pages/travel';
 @import 'pages/press';
 @import 'pages/faq';
+
 /****trumps****/
+
 @import 'trumps/hideText';
 @import 'trumps/responsive';
