@@ -25,7 +25,7 @@
             .btn-2 {
                 color: #FFFFFF;
                 font-family: 'JosefinSans-Regular';
-                @include button($spacing-unit*1.5 100px, $yellow, rgba(0, 0, 0, 0), 5px);
+                @include button($spacing-unit*1.5 130px, $yellow, rgba(0, 0, 0, 0), 5px);
                 width: 150px;
                 text-transform: uppercase;
                 margin: 50px 0 0 20px;

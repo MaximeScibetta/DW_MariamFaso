@@ -17,7 +17,7 @@
         text-align: center;
         //border: 1px solid white;
         padding: $spacing-unit;
-        &:hover:not(.menu__home){
+        &:hover:not(.menu__home) {
             background-color: $red;
         }
         &--hover:hover {
@@ -26,9 +26,9 @@
         &__submenu {
             left: -0;
             position: absolute;
-            top: 40px;  
+            top: 40px;
             background-color: #484848;
-            li{
+            li {
                 width: 216px;
             }
         }
@@ -37,8 +37,8 @@
             text-decoration: none;
         }
     }
-    #logo{
-        background-image: url(../images/logo.png);
+    #logo {
+        background-image: url(../images/MariamFasoLogo.png);
         background-size: 100%;
         background-repeat: no-repeat;
         /* padding: 20px; */
@@ -48,13 +48,13 @@
         padding: 0;
         width: 220px;
         left: 0;
-        a{
+        a {
             height: 64px;
             position: absolute;
             top: 0;
             padding: 0;
             width: 220px;
-            left: 0;  
+            left: 0;
         }
     }
 }
