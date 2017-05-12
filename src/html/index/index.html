@@ -12,13 +12,16 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <button id="menu" type="button">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--<li class="menu__home" id="logo">
+            <a href="./index.html"></a>
+        </li>-->
+        <nav class="sidebar">
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home" id="logo">
-                    <a href="./index.html"></a>
-                </li>
                 <li class="menu__home__subemenu"><a href="./index.html">Accueil</a></li>
                 <li class="menu__agenda menu__agenda"><a href="./html/agenda.html">Agenda</a>
                     <ul class="menu__agenda__submenu">
@@ -50,7 +53,7 @@
             </ul>
         </nav>
     </header>
-    <ul id="menu">
+    <!--<ul id="paralax">
         <li>
             <span class="dot" id="goto-1"></span>
         </li>
@@ -65,13 +68,13 @@
         </li>
         <!--<li>
             <span class="dot" id="goto-5"></span>
-        </li>-->
-    </ul>
+        </li>
+    </ul>-->
     <div class="grid"></div>
     <article class="article">
         <section class="article__intro" id="target-1">
             <div class="article__intro__container">
-                <h3>Mariam Faso</h3>
+                <h3 class="title">Mariam Faso</h3>
                 <p>ASBL pour améliorer les relations nord-sud.</p>
                 <p>Association qui réalise et soutient des projets au Burkina Faso et au Maroc.</p>
                 <a href="#target-2" class="btn-1">Nos objectifs</a>
@@ -128,7 +131,7 @@
                             <circle style="fill:#E4EEF4;" cx="35" cy="38.09" r="1.5"/>
                         </g>
                     </svg>
-                    <h4>Boire</h4>
+                    <h4><span>Boire</span></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales a massa in convallis. Mauris feugiat, felis eget porttitor hendrerit, elit lectus maximus nisi, sit amet fringilla turpis risus non dolor.</p>
                 </div>
                 <div class="article__objectif__container__item">
@@ -161,7 +164,7 @@
                                 c0-17.655-8.828-34.428-23.834-45.903C231.283,196.855,219.807,194.207,208.331,194.207"/>
                         </g>
                     </svg>
-                    <h4>Construire</h4>
+                    <h4><span>Construire</span></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales a massa in convallis. Mauris feugiat, felis eget porttitor hendrerit, elit lectus maximus nisi, sit amet fringilla turpis risus non dolor.</p>
                 </div>
                 <div class="article__objectif__container__item">
@@ -229,7 +232,7 @@
                             </g>
                         </g>
                     </svg>
-                    <h4>Manger</h4>
+                    <h4><span>Manger</span></h4>
                     <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales a massa in convallis. Mauris feugiat, felis eget porttitor hendrerit, elit lectus maximus nisi, sit amet fringilla turpis risus non dolor.</p>
 
 
@@ -292,7 +295,7 @@
                         <g>
                         </g>
                     </svg>
-                    <h4>Éduquer</h4>
+                    <h4><span>Éduquer</span></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales a massa in convallis. Mauris feugiat, felis eget porttitor hendrerit, elit lectus maximus nisi, sit amet fringilla turpis risus non dolor.</p>
                 </div>
             </div>
@@ -324,7 +327,7 @@
         <section class="article__actu">
             <h3 id="target-4">Notre <span>actualité</span></h3>
             <div class="article__actu__press">
-                <h3 class="article__actu__press__title">Notre <span>presse</span></h3>
+                <h4 class="article__actu__press__title">Notre <span>presse</span></h4>
                 <ul class="flex-container">
                     <li class="flex-item">1</li>
                     <li class="flex-item">2</li>
@@ -333,7 +336,7 @@
                 </ul>
             </div>
             <div class="article__actu__event">
-                <h3 class="article__actu__event__title">Nos <span>événements</span></h3>
+                <h4 class="article__actu__event__title">Nos <span>événements</span></h4>
                 <ul class="flex-container">
                     <li class="flex-item">1</li>
                     <li class="flex-item">2</li>
@@ -342,7 +345,7 @@
                 </ul>
             </div>
             <div class="article__actu__voyage">
-                <h3 class="article__actu__voyage__title">Nos <span>voyages</span></h3>
+                <h4 class="article__actu__voyage__title">Nos <span>voyages</span></h4>
                 <ul class="flex-container">
                     <li class="flex-item">1</li>
                     <li class="flex-item">2</li>
@@ -356,6 +359,7 @@
 <script src="./js/jquery-3.2.0.min.js"></script>
 <script src="./js/dropDownMenu.js"></script>
 <script src="./js/paralaxNavigation.js"></script>
+<script src="./js/sidebar.js"></script>
 <script>
     $('a#scroll').click(function() {
         $('html,body').animate({

@@ -1,23 +1,28 @@
-h1{
-    @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+h1 {
+    @include rhythm($font-lvl3, ($font-lvl3*1.5));
 }
-h2{
-    @include rhythm($font-lvl2, ($font-lvl2*1.5) );
+
+h2 {
+    @include rhythm($font-lvl2, ($font-lvl2*1.5));
 }
-h3{
+
+h3 {
     font-family: 'JosefinSans-Bold';
-    @include rhythm($font-lvl3, ($font-lvl3*1.5) );
+    @include rhythm($font-lvl3, ($font-lvl3*1.5));
 }
-h4{
-    @include rhythm($font-lvl2, ($font-lvl2*1.5) );
+
+h4 {
+    @include rhythm($font-lvl2, ($font-lvl2*1.5));
 }
-h5{
-    @include rhythm($font-lvl1, ($font-lvl1*1.5) );
+
+h5 {
+    @include rhythm($font-lvl1, ($font-lvl1*1.5));
 }
-p{
+
+p {
     @include rhythm($font-content, $font-content*1.5);
     font-family: 'JosefinSans-Regular';
-    &:not(:last-of-type){
-        margin-bottom: $spacing-unit*3;
+    &:not(:last-of-type) {
+        //margin-bottom: $spacing-unit*3;
     }
 }

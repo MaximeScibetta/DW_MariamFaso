@@ -1,0 +1,219 @@
+@media (min-width: 320px) {
+    html {
+        font-size: 59%;
+        /**11.2px**/
+    }
+    article {
+        .article__intro {
+            color: #FFF;
+            margin: 0 2% 3em 5%;
+            height: 80vh;
+            &__container {
+                h3 {
+                    margin-top: $spacing-elem;
+                }
+                p {
+                    width: 80%;
+                    margin-bottom: 1em;
+                    &:last-of-type {
+                        margin-bottom: 2em;
+                    }
+                }
+                .btn-2 {
+                    color: #FFFFFF;
+                    font-family: 'JosefinSans-Regular';
+                    @include button($spacing-unit*1.5 19%, $yellow, rgba(0, 0, 0, 0), 5px);
+                    width: 50%;
+                    text-transform: uppercase;
+                    //margin-left: 4px;
+                    margin-top: $spacing-unit;
+                    display: inline-block;
+                    letter-spacing: 1px;
+                }
+                .btn-1 {
+                    display: inline-block;
+                    color: #000;
+                    font-family: 'JosefinSans-Regular';
+                    @include button($spacing-unit*1.5 19%, $yellow, $yellow, 5px);
+                    width: 50%;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    //margin-top: $spacing-unit*3;
+                }
+            }
+            #scrolldown {
+                bottom: 20px;
+                height: 100px;
+                margin-left: -50px;
+                position: absolute;
+                left: 50%;
+                text-align: center;
+                //width: 110px;
+            }
+            #scrolldown p {
+                font: 700 0.7em/1em 'Avenir', sans-serif;
+                animation-duration: 2s;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
+                animation-name: 'scroll';
+                color: #FFFFFF;
+            }
+            #scrolldown>p {
+                text-transform: uppercase;
+                text-indent: 3px;
+            }
+            .mouse {
+                border: 2px solid #FFFFFF;
+                border-radius: 13px;
+                display: block;
+                height: 46px;
+                left: 50%;
+                margin: 10px 0 0 -13px;
+                position: absolute;
+                width: 26px;
+            }
+            .mouse span {
+                display: block;
+                font-size: 1.5em;
+                margin: 6px auto;
+            }
+            @keyframes scroll {
+                0% {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+            }
+        }
+        .article__objectif {
+            padding: 0 2% 0 5%;
+            background-color: #FFF;
+            padding-bottom: 5em;
+            h3 {
+                padding-top: 1em;
+                span {
+                    border-bottom: 10px solid $yellow;
+                }
+                margin-bottom: 1em;
+            }
+            p {
+                //width: 90%;
+                &:not(:last-of-type) {
+                    margin-bottom: 2em;
+                }
+            }
+            &__container {
+                // display: flex;
+                // flex-direction: column;
+                // flex-wrap: nowrap;
+                // justify-content: space-between;
+                &__item {
+                    margin-top: 6em;
+                    svg {
+                        width: 70%;
+                        margin: 0 auto;
+                        padding: 2em;
+                        border: 10px solid #dcdcdc;
+                        display: block;
+                        &:hover {
+                            border: 10px solid $blue;
+                            cursor: pointer;
+                        }
+                    }
+                    h4 {
+                        //@include rhythm($font-lvl1, ($font-lvl1*1.5));
+                        display: block;
+                        //margin: 0 auto;
+                        //width: 100%;
+                        text-align: center;
+                        margin-bottom: 0.5em;
+                        span {
+                            border-bottom: 3px solid $blue;
+                        }
+                    }
+                    p {
+                        width: 95%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .article__about {
+            color: #FFF;
+            margin: 0 2% 5em 5%;
+            h3 {
+                margin-top: 1em;
+                margin-right: -5px;
+                span {
+                    border-bottom: 10px solid $yellow;
+                }
+                margin-bottom: 1em;
+            }
+            p {
+                //width: 90%;
+                &:not(:last-of-type) {
+                    margin-bottom: 2em;
+                }
+            }
+            ul {
+                margin: $spacing-unit*3 0;
+                margin-left: 10%;
+                @include rhythm($font-content, $font-content*1.5);
+                li {
+                    list-style: circle;
+                }
+            }
+            .floatRight {
+                display: none;
+            }
+        }
+        .article__actu {
+            padding: 0 2% 0 5%;
+            background-color: #FFF;
+            padding-bottom: 5em;
+            h3 {
+                padding-top: 1em;
+                span {
+                    border-bottom: 10px solid $yellow;
+                }
+                margin-bottom: 0em;
+            }
+            &__press,
+            &__event,
+            &__voyage {
+                &__title {
+                    margin-top: 2em;
+                    margin-bottom: 0em;
+                }
+                .flex-container {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
+                .flex-item {
+                    background: tomato;
+                    padding: 5px;
+                    margin-top: 10px;
+                    line-height: 150px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 3em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:400px) {
+    h3:not(.title) {
+        text-align: center;
+    }
+}
