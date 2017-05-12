@@ -3,8 +3,8 @@
         font-size: 59%;
         /**11.2px**/
     }
-    article {
-        .article__intro {
+    .article {
+        &__intro {
             color: #FFF;
             margin: 0 2% 3em 5%;
             height: 80vh;
@@ -13,6 +13,7 @@
                     margin-top: $spacing-elem;
                 }
                 p {
+                    font-family: 'JosefinSans-Light';
                     width: 80%;
                     margin-bottom: 1em;
                     &:last-of-type {
@@ -48,7 +49,7 @@
                 position: absolute;
                 left: 50%;
                 text-align: center;
-                //width: 110px;
+                width: 110px;
             }
             #scrolldown p {
                 font: 700 0.7em/1em 'Avenir', sans-serif;
@@ -88,7 +89,7 @@
                 }
             }
         }
-        .article__objectif {
+        &__objectif {
             padding: 0 2% 0 5%;
             background-color: #FFF;
             padding-bottom: 5em;
@@ -106,12 +107,13 @@
                 }
             }
             &__container {
-                // display: flex;
-                // flex-direction: column;
-                // flex-wrap: nowrap;
-                // justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
                 &__item {
                     margin-top: 6em;
+                    flex-basis: 100%;
                     svg {
                         width: 70%;
                         margin: 0 auto;
@@ -141,7 +143,7 @@
                 }
             }
         }
-        .article__about {
+        &__about {
             color: #FFF;
             margin: 0 2% 5em 5%;
             h3 {
@@ -170,7 +172,7 @@
                 display: none;
             }
         }
-        .article__actu {
+        &__actu {
             padding: 0 2% 0 5%;
             background-color: #FFF;
             padding-bottom: 5em;
@@ -198,6 +200,7 @@
                     justify-content: space-around;
                 }
                 .flex-item {
+                    flex-basis: 100%;
                     background: tomato;
                     padding: 5px;
                     margin-top: 10px;
@@ -213,7 +216,199 @@
 }
 
 @media(min-width:400px) {
+    .article {
+        &__intro {
+            h3 {
+                font-size: 7.0625rem;
+                line-height: 9.59375rem;
+            }
+            p {
+                width: 100%;
+                font-size: 2rem;
+                line-height: 2.75rem;
+            }
+            #scrolldown {
+                bottom: 20px;
+            }
+        }
+    }
     h3:not(.title) {
         text-align: center;
+    }
+    .article {
+        &__objectif {
+            &__container {
+                &__item {
+                    margin: 6em auto 0;
+                    flex-basis: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:500px) {
+    html {
+        font-size: 70%;
+    }
+    .article {
+        &__intro {
+            &__container {
+                p+p {
+                    width: 480px;
+                }
+                .btn-1,
+                .btn-2 {
+                    width: 480px;
+                    padding: 18px 0;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 600px) {
+    .article {
+        &__objectif {
+            &__container {
+                &__item {
+                    flex-basis: 50%;
+                }
+            }
+        }
+        &__actu {
+            &__press,
+            &__event,
+            &__voyage {
+                .flex-container {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .flex-item {
+                        flex-basis: 45%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 700px) {
+    .article {
+        &__about {
+            .floatRight {
+                margin-top: 5em;
+                display: block;
+                text-align: center;
+                img {}
+            }
+        }
+    }
+}
+
+@media(min-width: 800px) {
+    html {
+        font-size: 80%;
+    }
+    .article {
+        &__objectif {
+            p {
+                width: 700px;
+                margin: 0 auto;
+            }
+            &__container {
+                &__item {
+                    flex-basis: 40%;
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &__about {
+            .floatLeft p {
+                width: 700px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media(min-width: 900px) {
+    html {
+        //font-size: 100%;
+    }
+    .article {
+        &__objectif {
+            &__container {
+                &__item {
+                    flex-basis: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1100px) {
+    .article {
+        &__actu {
+            &__press,
+            &__voyage,
+            &__event {
+                .flex-container {
+                    .flex-item {
+                        flex-basis: 21%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    html {
+        font-size: 90%;
+    }
+    .article {
+        &__intro {
+            &__container {
+                margin-left: 50px;
+                h3 {
+                    margin-top: 100px;
+                    @include rhythm($font-lvl3*2, ($font-lvl3*2));
+                }
+                p {
+                    @include rhythm($font-content*1.5, $font-content*2);
+                    margin-top: $spacing-unit;
+                }
+                p+p {
+                    margin-top: $spacing-unit*6;
+                    width: 600px;
+                }
+                .btn-1 {
+                    display: inline-block;
+                    color: #000;
+                    @include button($spacing-unit*1.5 $spacing-elem*3, $yellow, $yellow, 5px);
+                    width: 150px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .btn-2 {
+                    @include button($spacing-unit*1.5 100px, $yellow, rgba(0, 0, 0, 0), 5px);
+                    width: 150px;
+                    margin-left: 4px;
+                    margin-top: $spacing-unit*3;
+                    display: inline-block;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        &__objectif {
+            &__container {
+                &__item {
+                    flex-basis: 20%;
+                }
+            }
+        }
     }
 }
