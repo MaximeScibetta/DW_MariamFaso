@@ -13,21 +13,42 @@ body {
             background-color: #000;
             height: 4.464em;
             /*50px*/
+            position: fixed;
+            width: 100%;
+            z-index: 1;
         }
     }
     .sidebar {
         width: 0px;
-        background-color: $base-bcg-color;
+        background-color: #000;
         position: absolute;
         left: -300px;
-        top: 123px;
+        top: 4.464em;
         height: 100vh;
         //width: 300px;
         transform: translateX(0);
         transition: transform 0.3s;
         z-index: 10;
-        ul>li>ul>li>a {
-            // display: block;
+        .menu {
+            text-transform: uppercase;
+            &__home,
+            &__don,
+            &__actu,
+            &__contact,
+            &__agenda {
+                margin: $spacing-unit*2 0 0 $spacing-unit;
+                a {
+                    color: #FFF;
+                }
+                &__submenu {
+                    li {
+                        margin: $spacing-unit*2 0 0 $spacing-unit;
+                        a {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
         }
     }
     .has-sidebar .sidebar {

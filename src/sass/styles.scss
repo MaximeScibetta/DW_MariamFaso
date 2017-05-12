@@ -59,4 +59,10 @@ body {
 /****trumps****/
 
 @import 'trumps/hideText';
-@import 'trumps/responsive';
+
+/*****responsive****/
+
+@import 'responsive/home';
+@import 'responsive/project';
+// @import 'responsive/event';
+// @import 'responsive/travel';

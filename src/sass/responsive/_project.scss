@@ -1,0 +1,238 @@
+ @media (min-width:320px) {
+     .project {
+         &__title {
+             color: #FFF;
+             padding: 0 2% 3em 5%;
+             h3 {
+                 padding-top: 1em;
+                 line-height: 1.2;
+             }
+             div {
+                 margin-top: 5em;
+                 position: relative;
+                 #quote_1 {
+                     position: absolute;
+                     top: 0;
+                     left: 10px;
+                     width: 20px;
+                     height: 20px;
+                 }
+                 #quote_2 {
+                     position: absolute;
+                     width: 20px;
+                     height: 20px;
+                     bottom: 0;
+                     right: 30px;
+                 }
+                 p {
+                     width: 70%;
+                     margin: 0 auto;
+                 }
+             }
+         }
+         &__besoin {
+             padding: 0 2% 3em 5%;
+             background-color: #FFF;
+             h3 {
+                 padding-top: 1em;
+                 margin-bottom: 1em;
+                 span {
+                     border-bottom: 10px solid $yellow;
+                 }
+             }
+             .statistic {
+                 display: flex;
+                 flex-direction: column;
+                 div {
+                     .btn {
+                         color: #000;
+                         font-family: 'JosefinSans-Regular';
+                         @include button(.5em 1em, $yellow, $yellow, 5px);
+                         font-size: 20px;
+                         //width: 150px;
+                         text-transform: uppercase;
+                         display: block;
+                         margin: 1em auto 0;
+                     }
+                 }
+                 div {
+                     position: relative;
+                     .statistics {
+                         width: 60%;
+                         max-width: 300px;
+                         margin: 5em auto 0;
+                     }
+                     svg {
+                         width: 14%;
+                         display: block;
+                         margin: 0 auto;
+                         position: absolute;
+                         top: 140px;
+                         right: 43%;
+                     }
+                     p {
+                         margin-top: 2em;
+                         text-align: center;
+                     }
+                 }
+             }
+         }
+         &__objectif {
+             color: #FFF;
+             padding: 0 2% 3em 5%;
+             h3 {
+                 //padding-top: 1em;
+                 margin-bottom: 1em;
+                 span {
+                     border-bottom: 10px solid $yellow;
+                 }
+             }
+             p:not(:last-of-type) {
+                 margin-bottom: 2em;
+             }
+         }
+         &__stats {
+             padding: 0 2% 3em 5%;
+             background-color: #FFF;
+             display: flex;
+             flex-direction: column;
+             flex-wrap: wrap;
+             justify-content: space-between;
+             div {
+                 .stat {
+                     width: 60%;
+                     max-width: 300px;
+                     margin: 5em auto 0;
+                 }
+                 p {
+                     width: 80%;
+                     margin: 2em auto 0;
+                     text-align: center;
+                 }
+             }
+         }
+         &__gallery {
+             padding: 0 2% 3em 5%;
+             background-color: #FFF;
+             h3 {
+                 padding-top: 1em;
+                 margin-bottom: 1em;
+                 span {
+                     border-bottom: 10px solid $yellow;
+                 }
+             }
+         }
+     }
+ }
+ 
+ @media (min-width:600px) {
+     .project {
+         &__besoin {
+             margin: 5em auto 0;
+             .statistic {
+                 p {
+                     width: 550px;
+                     margin: 0 auto;
+                 }
+             }
+         }
+         &__objectif {
+             max-width: 700px;
+             margin: 5em auto 0;
+             .text {
+                 margin: 0 2% 3em 5%;
+                 ;
+             }
+             p:last-of-type {
+                 margin-bottom: 5em;
+             }
+         }
+         &__stats {
+             margin: 0 auto 0;
+             div {
+                 p {
+                     max-width: 500px;
+                     margin: 2em auto 0;
+                 }
+             }
+         }
+     }
+ }
+ 
+ @media (min-width:800px) {
+     .project {
+         &__besoin {
+             width: 100%;
+             .statistic {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+                 justify-content: space-around;
+                 >div {
+                     flex-basis: 40%;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     p {
+                         margin-top: 0;
+                         text-align: center;
+                     }
+                     .btn {
+                         margin-left: 0;
+                         width: 87%;
+                     }
+                 }
+                 div+div {
+                     display: block;
+                     .statistics {
+                         margin-top: 0;
+                     }
+                     svg {
+                         top: 100px;
+                     }
+                     p {
+                         margin-top: 2em;
+                     }
+                 }
+             }
+         }
+         &__objectif {}
+         &__stats {}
+     }
+ }
+ 
+ @media (min-width:1000px) {
+     .project {
+         &__stats {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: space-between;
+             div {
+                 flex-basis: 30%;
+                 .stat {
+                     width: 100%;
+                 }
+             }
+         }
+     }
+ }
+ 
+ @media (min-width:1100px) {
+     .project {
+         &__objectif {
+             max-width: 100%;
+             margin-top: 5em;
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: space-around;
+             h3 {
+                 flex-basis: 40%;
+             }
+             .text {
+                 flex-basis: 50%;
+             }
+         }
+     }
+ }

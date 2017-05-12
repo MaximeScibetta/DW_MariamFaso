@@ -13,12 +13,15 @@
 
 <body>
     <header>
-        <nav>
+        <button id="menu" type="button">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--<li class="menu__home" id="logo">
+            <a href="./index.html"></a>
+        </li>-->
+        <nav class="sidebar">
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home" id="logo">
-                    <a href="../index.html"></a>
-                </li>
                 <li class="menu__home__subemenu"><a href="../index.html">Accueil</a></li>
                 <li class="menu__agenda"><a href="./agenda.html">Agenda</a>
                     <ul class="menu__agenda__submenu">
@@ -50,7 +53,7 @@
             </ul>
         </nav>
     </header>
-    <ul id="menu">
+    <!--<ul id="menu">
         <li>
             <span class="dot" id="goto-1"></span>
         </li>
@@ -72,11 +75,11 @@
         <li>
             <span class="dot" id="goto-7"></span>
         </li>
-    </ul>
+    </ul>-->
     <div class="grid2"></div>
     <article class="project" id="target-1">
         <section class="project__title">
-            <h3>Construction d'un puits</h3>
+            <h3 class="title">Construction d'un puits</h3>
             <div>
                 <svg version="1.1" id="quote_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081" style="enable-background:new 0 0 475.082 475.081;" xml:space="preserve">
                     <g>
@@ -122,9 +125,9 @@
             </div>
         </section>
         <section class="project__besoin" id="target-2">
+            <h3>Les <span>besoins</span></h3>
             <div class="statistic">
                 <div>
-                    <h4>Les <span>besoins</span></h4>
                     <p>Aider l'association a avancer dans ce projet, pour le bien être des personnes en difficulté.</p>
                     <a href="./dons.html" class="btn">Faire un don</a>
                 </div>
@@ -189,7 +192,7 @@
             </div>
         </section>
         <section class="project__gallery" id="target-6">
-            <h3>En images ...</h3>
+            <h3>En <span>images</span> ...</h3>
             <p>Photographie prise par monsieur XXXXXX durant le voyage humanitaire de 20xx au Burkina Faso</p>
             <div id="sequence" class="seq">
                 <div class="seq-screen">
@@ -258,5 +261,6 @@
 <script src="../js/hammer.min.js"></script>
 <script src="../js/sequence.min.js"></script>
 <script src="../js/sequence-theme.starter-basic.min.js"></script>
+<script src="../js/sidebar.js"></script>
 
 </html>
