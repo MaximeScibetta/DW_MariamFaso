@@ -1,7 +1,7 @@
-.navigation{
-    float: none; 
+.navigation {
+    float: none;
     clear: both;
-    width: 100%; 
+    width: 100%;
     margin: 0 0 20px 0;
     background: #eee;
     position: relative;
@@ -9,61 +9,61 @@
         list-style: none;
         margin: 0px;
         padding: 0px;
-        li{
-            float: none; 
+        li {
+            float: none;
             width: 100%;
-            a{
-                display: block; 
-                width: 100%; 
-                padding: 27px; 
-                border-left: 5px solid; 
-                position: relative; 
+            a {
+                display: block;
+                width: 100%;
+                padding: 27px;
+                border-left: 5px solid;
+                position: relative;
                 z-index: 1;
                 text-decoration: none;
                 color: #444;
-                box-sizing: border-box;  
-                -moz-box-sizing: border-box;  
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
-                &:hover{
+                &:hover {
                     border-bottom: 0px;
                     color: #fff;
-                    &:after{
+                    &:after {
                         width: 100%;
                     }
                 }
-                &:after{
+                &:after {
                     content: "";
-                    height: 100%; 
-                    left: 0; 
-                    top: 0; 
-                    width: 0px;  
-                    position: absolute; 
-                    transition: all 0.3s ease 0s; 
-                    -webkit-transition: all 0.3s ease 0s; 
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    width: 0px;
+                    position: absolute;
+                    transition: all 0.3s ease 0s;
+                    -webkit-transition: all 0.3s ease 0s;
                     z-index: -1;
                 }
             }
-            &:first-child a{
+            &:first-child a {
                 border-left: 10px solid #3498db;
-                &:after{
+                &:after {
                     background: #3498db;
                 }
             }
-            &:nth-child(2) a{
+            &:nth-child(2) a {
                 border-left: 10px solid #ffd071;
-                &:after{
+                &:after {
                     background: #ffd071;
                 }
             }
-            &:nth-child(3) a{
+            &:nth-child(3) a {
                 border-left: 10px solid #f0776c;
-                &:after{
+                &:after {
                     background: #f0776c;
                 }
             }
-            &:last-child a{
+            &:last-child a {
                 border-left: 10px solid #1abc9c;
-                &:after{
+                &:after {
                     background: #1abc9c;
                 }
             }

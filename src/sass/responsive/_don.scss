@@ -1,0 +1,207 @@
+@media (min-width: 320px) {
+    article {
+        .donIntro {
+            h3 {
+                padding-top: 2em;
+                margin-bottom: .5em;
+                text-align: center;
+                span {
+                    border-bottom: 10px solid $yellow;
+                }
+            }
+            .container {
+                //width: 1200px;
+                //margin: 0 auto ($spacing-unit*2)+2;
+                //align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                p {
+                    flex-basis: 80%;
+                    margin: 0 auto;
+                    margin-bottom: 4em;
+                }
+            }
+        }
+        .ajax {
+            .container {
+                .navigation {
+                    ul>li>a {
+                        font-size: 36px;
+                        font-size: 2.25rem;
+                        line-height: 54px;
+                        line-height: 3.375rem;
+                    }
+                    #imageNav {
+                        display: none;
+                    }
+                }
+                .show-data {
+                    .show-title {
+                        h4 {
+                            font-family: 'JosefinSans-Bold';
+                            font-size: 5.0625rem;
+                            line-height: 7.59375rem;
+                            text-align: center;
+                            margin-bottom: 1em;
+                        }
+                        span {
+                            border-bottom: 10px solid $yellow;
+                        }
+                    }
+                    .show-text {
+                        p {
+                            width: 90%;
+                            max-width: 700px;
+                            margin: 0 auto;
+                            margin-bottom: 2em;
+                        }
+                    }
+                    .show-image {
+                        img {
+                            display: none;
+                        }
+                        img+img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    article {
+        .ajax {
+            .container {
+                .show-data {
+                    position: relative;
+                    .show-text {
+                        color: #FFF;
+                        p:first-of-type {
+                            margin-top: 3em;
+                        }
+                    }
+                    .show-image {
+                        position: absolute;
+                        top: 10em;
+                        left: 0;
+                        z-index: -1;
+                        height: 100%;
+                        width: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            -webkit-filter: blur(10px);
+                            filter: blur(10px);
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    article {
+        .donIntro {
+            .container {
+                p {
+                    flex-basis: 40%;
+                    //margin: 0 auto;
+                    margin-bottom: 4em;
+                    max-width: 700px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    article {
+        .ajax {
+            .container {
+                .navigation {
+                    #imageNav {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: 1;
+                        img {
+                            height: 388px;
+                        }
+                    }
+                }
+                .show-data {
+                    position: initial;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    .show-title {
+                        flex-basis: 100%;
+                    }
+                    .show-text {
+                        color: #000;
+                        flex-basis: 60%;
+                        flex: 1.5;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 5%;
+                        p {
+                            width: 100%;
+                            &:first-of-type {
+                                margin-top: 0;
+                            }
+                        }
+                        img {
+                            display: inline-block;
+                        }
+                    }
+                    .show-image {
+                        position: initial;
+                        height: initial;
+                        margin: 0 5%;
+                        //width: 100%;
+                        flex-basis: 30%;
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+                        img {
+                            align-self: center;
+                            width: 100%;
+                            height: initial;
+                            filter: initial;
+                            //display: block;
+                        }
+                        img+img {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    article {
+        .ajax {
+            .container {
+                .show-data {
+                    .show-image {
+                        img {
+                            width: 450px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

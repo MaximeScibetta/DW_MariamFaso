@@ -12,16 +12,22 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <button id="menu" type="button">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--<li class="menu__home" id="logo">
+                    <a href="../index.html"></a>
+                </li>-->
+        <nav class="sidebar">
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home" id="logo"><a href="../index.html"></a></li>
-                <li class="menu__home__subemenu" ><a href="../index.html">Accueil</a></li>
+
+                <li class="menu__home"><a href="../index.html">Accueil</a></li>
                 <li class="menu__agenda"><a href="./agenda.html">Agenda</a>
                     <ul class="menu__agenda__submenu">
                         <li class=" menu__agenda--hover"><a href="./event.html">Événements</a></li>
-                        <li class=" menu__agenda--hover"><a href="./project.html">Projets</a></li>
+                        <li class=" menu__agenda--hover"><a href="./travel.html">Projets</a></li>
                         <li class=" menu__agenda--hover"><a href="./travel.html">Voyages</a></li>
                     </ul>
                 </li>
@@ -33,7 +39,7 @@
                         <li class="menu__don--hover"><a href="./dons_fiscaux.html">Avantages fiscaux</a></li>
                     </ul>
                 </li>
-                <li class="menu__actu menu__actu"><a href="# ">Actualités</a>
+                <li class="menu__actu menu__actu"><a href="./actu.html">Actualités</a>
                     <ul class="menu__actu__submenu">
                         <li class="menu__actu--hover"><a href="./press.html">Presse</a></li>
                         <li class="menu__actu--hover"><a href="# ">Blog</a></li>
@@ -52,12 +58,16 @@
         <section class="donIntro">
             <h3>Pourquoi faire un <span>don</span> ?</h3>
             <div class="container">
-                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh sed tempor.</p>
-                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh sed tempor.</p>
+                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum
+                    sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh
+                    sed tempor.</p>
+                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum
+                    sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh
+                    sed tempor.</p>
             </div>
         </section>
-       <section class="ajax">
-           <div class="container">
+        <section class="ajax">
+            <div class="container">
                 <div class="navigation" id="navigation">
                     <ul>
                         <li><a href="./dons_financier.html" id="get-help">Faire un don financier</a></li>
@@ -75,11 +85,12 @@
                     <div id="show-image" class="show-image"> </div>
                 </div>
             </div>
-       </section>
+        </section>
     </article>
 </body>
 <script src="../js/jquery-3.2.0.min.js"></script>
 <script src="../js/dropDownMenu.js"></script>
+<script src="../js/sidebar.js"></script>
 <!--<script src="../js/ajaxMenu.js"></script>-->
 
 </html>

@@ -12,16 +12,22 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <button id="menu" type="button">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--<li class="menu__home" id="logo">
+                    <a href="../index.html"></a>
+                </li>-->
+        <nav class="sidebar">
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home" id="logo"><a href="../index.html"></a></li>
-                <li class="menu__home__subemenu" ><a href="../index.html">Accueil</a></li>
+
+                <li class="menu__home"><a href="../index.html">Accueil</a></li>
                 <li class="menu__agenda"><a href="./agenda.html">Agenda</a>
                     <ul class="menu__agenda__submenu">
                         <li class=" menu__agenda--hover"><a href="./event.html">Événements</a></li>
-                        <li class=" menu__agenda--hover"><a href="./project.html">Projets</a></li>
+                        <li class=" menu__agenda--hover"><a href="./travel.html">Projets</a></li>
                         <li class=" menu__agenda--hover"><a href="./travel.html">Voyages</a></li>
                     </ul>
                 </li>
@@ -52,12 +58,16 @@
         <section class="donIntro">
             <h3>Pourquoi faire un <span>don</span> ?</h3>
             <div class="container">
-                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh sed tempor.</p>
-                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh sed tempor.</p>
+                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum
+                    sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh
+                    sed tempor.</p>
+                <p>Suspendisse potenti. Donec bibendum augue sed libero efficitur, et viverra turpis rutrum. Nullam vulputate erat sed blandit convallis. Suspendisse placerat lacus nisl, eu imperdiet orci sodales a. Nullam risus nunc, facilisis eget fermentum
+                    sit amet, malesuada ut lorem. Vestibulum id justo id elit tempor luctus id at augue. Phasellus vitae accumsan sapien. Mauris vel lacus tempus dolor commodo accumsan a eu neque. Donec eu feugiat felis. Aenean fringilla gravida nibh
+                    sed tempor.</p>
             </div>
         </section>
-       <section class="ajax">
-           <div class="container">
+        <section class="ajax">
+            <div class="container">
                 <div class="navigation" id="navigation">
                     <ul>
                         <li><a href="./dons_financier.html" id="get-help">Faire un don financier</a></li>
@@ -70,14 +80,18 @@
                     </div>
                 </div>
                 <div id="show-data" class="show-data">
-                    <div id="show-title" class="show-title"> 
+                    <div id="show-title" class="show-title">
                         <h4>
                             Faire un don <span>financier</span>
                         </h4>
                     </div>
                     <div class="show-text" id="show-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare, purus at dapibus commodo, dolor ante ullamcorper nisl, eu elementum orci nisl quis eros. Donec sit amet dignissim lacus. Duis et varius est. Ut tincidunt dui ex, ut suscipit arcu eleifend a. Aenean commodo odio ex, vel placerat massa ullamcorper sed. Nunc ac sodales sapien. In eget nibh dignissim eros ultricies aliquam. Sed facilisis consectetur egestas. Quisque ultrices suscipit dolor sed lacinia. Pellentesque eu sapien mi. Fusce iaculis tincidunt nunc, sit amet vehicula sapien porta nec. Praesent dapibus, sem a convallis dignissim, felis urna consectetur dui, ac tempus nibh purus at dolor.</p>
-                        <p>Aenean viverra justo eu erat scelerisque tempus ut faucibus nulla. Etiam ut mi nec metus faucibus egestas. Mauris hendrerit sodales leo, sed bibendum ante tristique ac. Cras facilisis sit amet nibh sit amet blandit. Quisque et erat ut dolor vehicula pellentesque eu et purus. Ut at mollis massa. Pellentesque nibh sapien, blandit vel vehicula nec, suscipit ut lorem. Sed ipsum mi, pulvinar eget sollicitudin in, varius vitae nibh. Suspendisse ac varius ante. Cras fringilla condimentum massa at iaculis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare, purus at dapibus commodo, dolor ante ullamcorper nisl, eu elementum orci nisl quis eros. Donec sit amet dignissim lacus. Duis et varius est. Ut tincidunt dui ex,
+                            ut suscipit arcu eleifend a. Aenean commodo odio ex, vel placerat massa ullamcorper sed. Nunc ac sodales sapien. In eget nibh dignissim eros ultricies aliquam. Sed facilisis consectetur egestas. Quisque ultrices suscipit dolor
+                            sed lacinia. Pellentesque eu sapien mi. Fusce iaculis tincidunt nunc, sit amet vehicula sapien porta nec. Praesent dapibus, sem a convallis dignissim, felis urna consectetur dui, ac tempus nibh purus at dolor.</p>
+                        <p>Aenean viverra justo eu erat scelerisque tempus ut faucibus nulla. Etiam ut mi nec metus faucibus egestas. Mauris hendrerit sodales leo, sed bibendum ante tristique ac. Cras facilisis sit amet nibh sit amet blandit. Quisque et
+                            erat ut dolor vehicula pellentesque eu et purus. Ut at mollis massa. Pellentesque nibh sapien, blandit vel vehicula nec, suscipit ut lorem. Sed ipsum mi, pulvinar eget sollicitudin in, varius vitae nibh. Suspendisse ac varius
+                            ante. Cras fringilla condimentum massa at iaculis.</p>
                     </div>
                     <div id="show-image" class="show-image">
                         <img src="../images/ajax1.jpg" alt="">
@@ -85,11 +99,12 @@
                     </div>
                 </div>
             </div>
-       </section>
+        </section>
     </article>
 </body>
 <script src="../js/jquery-3.2.0.min.js"></script>
 <script src="../js/dropDownMenu.js"></script>
+<script src="../js/sidebar.js"></script>
 <!--<script src="../js/ajaxMenu.js"></script>-->
 
 </html>
