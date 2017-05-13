@@ -1,0 +1,477 @@
+@media (min-width:320px) {
+    .event {
+        &__title {
+            color: #FFF;
+            padding: 0 2% 3em 5%;
+            h3 {
+                padding-top: 2em;
+                line-height: 1.2;
+            }
+            div {
+                margin-top: 5em;
+                position: relative;
+                #quote_1 {
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                    width: 20px;
+                    height: 20px;
+                    fill: #FFF;
+                }
+                #quote_2 {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    bottom: 0;
+                    right: 30px;
+                    fill: #FFF;
+                }
+                p {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        &__map {
+            background-color: #FFF;
+            .map {
+                width: 100%;
+                //height: 380px;
+                //margin: calc(50vh - 190px) auto;
+                //box-shadow: 0 0 40px -10px black;
+                //background: rgb(230, 230, 230);
+                //font-family: 'Montserrat', sans-serif;
+                //max-width: calc(100vw - 60px)
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            #map {
+                width: 100%;
+                height: 300px;
+                display: inline-block;
+                flex-basis: 100%;
+            }
+            .map-c {
+                //float: right;
+                width: 100%;
+                flex-basis: 100%;
+                height: 100%;
+                //padding: 25px;
+                box-sizing: border-box;
+                color: #000;
+                margin: 0 2% 3em 5%;
+                h4 {
+                    margin-top: 1em;
+                }
+                .btn-2 {
+                    color: #000;
+                    font-family: 'JosefinSans-Regular';
+                    @include button(.7em 1em, $yellow, rgba(0, 0, 0, 0), 5px);
+                    font-size: 20px;
+                    //width: 150px;
+                    text-transform: uppercase;
+                    display: block;
+                    margin: 1em auto 0;
+                    font-weight: 700
+                }
+                .btn-1 {
+                    color: #000;
+                    font-family: 'JosefinSans-Regular';
+                    @include button(.7em 1em, $yellow, $yellow, 5px);
+                    font-size: 20px;
+                    //width: 150px;
+                    text-transform: uppercase;
+                    display: block;
+                    margin: 1em auto 0;
+                    font-weight: 700
+                }
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    width: 95%;
+                }
+            }
+        }
+        &__besoin {
+            padding: 0 2% 3em 5%;
+            background-color: #FFF;
+        }
+        h3 {
+            padding-top: 1em;
+            margin-bottom: .5em;
+            span {
+                border-bottom: 10px solid $yellow;
+            }
+        }
+        .statistic {
+            display: flex;
+            flex-direction: column;
+            div {
+                .btn {
+                    color: #000;
+                    font-family: 'JosefinSans-Regular';
+                    @include button(.5em 1em, $yellow, $yellow, 5px);
+                    font-size: 20px;
+                    //width: 150px;
+                    text-transform: uppercase;
+                    display: block;
+                    margin: 1em auto 0;
+                }
+            }
+            div {
+                position: relative;
+                .statistics {
+                    width: 60%;
+                    max-width: 300px;
+                    margin: 5em auto 0;
+                }
+                svg {
+                    width: 14%;
+                    display: block;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 140px;
+                    right: 43%;
+                }
+                p {
+                    margin-top: 2em;
+                    text-align: center;
+                }
+            }
+        }
+        &__objectif {
+            color: #FFF;
+            padding: 0 2% 3em 5%;
+            h3 {
+                padding-top: 1em;
+                margin-bottom: 1em;
+                span {
+                    border-bottom: 10px solid $yellow;
+                }
+            }
+            p:not(:last-of-type) {
+                margin-bottom: 2em;
+            }
+        }
+        &__stats {
+            padding: 0 2% 3em 5%;
+            background-color: #FFF;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div {
+                .stat {
+                    width: 60%;
+                    max-width: 300px;
+                    margin: 5em auto 0;
+                }
+                p {
+                    width: 80%;
+                    margin: 2em auto 0;
+                    text-align: center;
+                }
+            }
+        }
+        &__gallery {
+            padding: 0 2% 3em 5%;
+            background-color: #FFF;
+            h3 {
+                padding-top: 1em;
+                margin-bottom: 1em;
+                span {
+                    border-bottom: 10px solid $yellow;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:500px) {
+    .event {
+        &__title {
+            div {
+                #quote_1 {
+                    width: 40px;
+                    height: 40px;
+                }
+                #quote_2 {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:600px) {
+    .event {
+        &__besoin {
+            margin: 5em auto 0;
+            .statistic {
+                div {
+                    p {
+                        width: 550px;
+                        margin: 0 auto;
+                    }
+                    .btn {
+                        width: 550px;
+                        padding: .5em 0;
+                    }
+                }
+            }
+        }
+        &__map {
+            .map-c {
+                .btn-1 {
+                    width: 40%;
+                    display: inline-block;
+                    padding: .7em 1em;
+                }
+                .btn-2 {
+                    width: 40%;
+                    display: inline-block;
+                    margin-left: 4%;
+                    padding: .7em 1em;
+                }
+            }
+        }
+        &__objectif {
+            max-width: 700px;
+            margin: auto auto;
+            .text {
+                margin: 0 2% 3em 5%;
+            }
+            p:last-of-type {
+                //margin-bottom: 5em;
+            }
+        }
+        &__stats {
+            margin: 0 auto 0;
+            div {
+                p {
+                    max-width: 500px;
+                    margin: 2em auto 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:800px) {
+    .event {
+        &__besoin {
+            width: 100%;
+            margin: 0;
+            padding: 0 0 3em 0;
+            .statistic {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                >div {
+                    flex-basis: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p {
+                        margin-top: 0;
+                        text-align: center;
+                    }
+                    .btn {
+                        //margin-left: 0;
+                        width: 87%;
+                    }
+                }
+                div+div {
+                    display: block;
+                    margin-top: 5em;
+                    .statistics {
+                        margin-top: 0;
+                    }
+                    svg {
+                        top: 100px;
+                    }
+                    p {
+                        margin-top: 2em;
+                    }
+                }
+            }
+        }
+        &__objectif {}
+        &__stats {}
+    }
+}
+
+@media (min-width:1000px) {
+    .event {
+        &__map {
+            #map {
+                width: 60%;
+                height: 572px;
+                display: inline-block;
+                flex-basis: 60%;
+            }
+            .map-c {
+                width: 33%;
+                flex-basis: 33%;
+                height: 100%;
+                .btn-1 {
+                    display: block;
+                    width: 100%;
+                    @include button(.7em 0, $yellow, $yellow, 5px);
+                }
+                .btn-2 {
+                    display: block;
+                    width: 100%;
+                    margin-left: 0;
+                    @include button(.7em 0, #000, rgba(0, 0, 0, 0), 5px);
+                }
+            }
+        }
+        &__stats {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div {
+                flex-basis: 30%;
+                .stat {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1100px) {
+    .event {
+        &__title {
+            div {
+                position: relative;
+                bottom: 66px;
+                left: 65%;
+                width: 320px;
+                margin: 0;
+                //z-index: 0;
+                p {
+                    @include rhythm($font-lvl1, ($font-lvl1*1.5));
+                    text-align: center;
+                    display: inline-block;
+                    width: 100%;
+                }
+                svg {
+                    display: inline-block;
+                    width: 15%;
+                    height: 25%;
+                    fill: #fff;
+                    &#quote_1 {
+                        position: absolute;
+                        top: 0;
+                        left: -25px;
+                    }
+                    &#quote_2 {
+                        position: absolute;
+                        bottom: 0;
+                        right: -20px;
+                    }
+                }
+            }
+        }
+        &__besoin {
+            .statistic {
+                div {
+                    h3 {
+                        text-align: initial;
+                        font-size: 5.0625rem;
+                        line-height: 7.59375rem;
+                        padding-top: 0;
+                    }
+                    p {
+                        width: auto;
+                        text-align: initial;
+                    }
+                    .btn {
+                        width: auto;
+                        padding: .7em 1em;
+                        margin: 1em 0 0 0;
+                    }
+                }
+                div+div {
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &__objectif {
+            max-width: 100%;
+            margin-top: 5em;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            h3 {
+                flex-basis: 40%;
+                padding-top: 0;
+            }
+            .text {
+                flex-basis: 50%;
+                p:first-of-type {
+                    margin-top: 21px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .event {
+        #map {
+            height: 593px;
+        }
+        &__besoin {
+            .statistic {
+                div {
+                    .btn {
+                        width: 190px;
+                        padding: 18px 155px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .event {
+        &__besoin {
+            .statistic {
+                div {
+                    p {
+                        width: 80%;
+                        margin: 0 auto 0 0;
+                    }
+                }
+                div+div {
+                    p {
+                        margin: 2em auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .event {
+        &__objectif {
+            .text {
+                p {
+                    max-width: 700px;
+                }
+            }
+        }
+    }
+}

@@ -46,6 +46,13 @@ body {
 }
 
 
+/*****responsive****/
+
+@import 'responsive/home';
+@import 'responsive/project';
+@import 'responsive/event';
+@import 'responsive/travel';
+
 /****pages****/
 
 @import 'pages/home';
@@ -59,10 +66,4 @@ body {
 /****trumps****/
 
 @import 'trumps/hideText';
-
-/*****responsive****/
-
-@import 'responsive/home';
-@import 'responsive/project';
-// @import 'responsive/event';
-// @import 'responsive/travel';
+@import 'trumps/responsive';

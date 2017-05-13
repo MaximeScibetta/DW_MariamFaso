@@ -4,7 +4,7 @@
              color: #FFF;
              padding: 0 2% 3em 5%;
              h3 {
-                 padding-top: 1em;
+                 padding-top: 2em;
                  line-height: 1.2;
              }
              div {
@@ -16,6 +16,7 @@
                      left: 10px;
                      width: 20px;
                      height: 20px;
+                     fill: #FFF;
                  }
                  #quote_2 {
                      position: absolute;
@@ -23,6 +24,7 @@
                      height: 20px;
                      bottom: 0;
                      right: 30px;
+                     fill: #FFF;
                  }
                  p {
                      width: 70%;
@@ -35,7 +37,7 @@
              background-color: #FFF;
              h3 {
                  padding-top: 1em;
-                 margin-bottom: 1em;
+                 margin-bottom: .5em;
                  span {
                      border-bottom: 10px solid $yellow;
                  }
@@ -81,7 +83,7 @@
              color: #FFF;
              padding: 0 2% 3em 5%;
              h3 {
-                 //padding-top: 1em;
+                 padding-top: 1em;
                  margin-bottom: 1em;
                  span {
                      border-bottom: 10px solid $yellow;
@@ -125,26 +127,48 @@
      }
  }
  
+ @media (min-width:500px) {
+     .project {
+         &__title {
+             div {
+                 #quote_1 {
+                     width: 40px;
+                     height: 40px;
+                 }
+                 #quote_2 {
+                     width: 40px;
+                     height: 40px;
+                 }
+             }
+         }
+     }
+ }
+ 
  @media (min-width:600px) {
      .project {
          &__besoin {
              margin: 5em auto 0;
              .statistic {
-                 p {
-                     width: 550px;
-                     margin: 0 auto;
+                 div {
+                     p {
+                         width: 550px;
+                         margin: 0 auto;
+                     }
+                     .btn {
+                         width: 550px;
+                         padding: .5em 0;
+                     }
                  }
              }
          }
          &__objectif {
              max-width: 700px;
-             margin: 5em auto 0;
+             margin: auto auto;
              .text {
                  margin: 0 2% 3em 5%;
-                 ;
              }
              p:last-of-type {
-                 margin-bottom: 5em;
+                 //margin-bottom: 5em;
              }
          }
          &__stats {
@@ -163,6 +187,8 @@
      .project {
          &__besoin {
              width: 100%;
+             margin: 0;
+             padding: 0 0 3em 0;
              .statistic {
                  display: flex;
                  flex-direction: row;
@@ -178,12 +204,13 @@
                          text-align: center;
                      }
                      .btn {
-                         margin-left: 0;
+                         //margin-left: 0;
                          width: 87%;
                      }
                  }
                  div+div {
                      display: block;
+                     margin-top: 5em;
                      .statistics {
                          margin-top: 0;
                      }
@@ -220,6 +247,64 @@
  
  @media (min-width:1100px) {
      .project {
+         &__title {
+             div {
+                 position: relative;
+                 bottom: 66px;
+                 left: 65%;
+                 width: 320px;
+                 margin: 0;
+                 //z-index: 0;
+                 p {
+                     @include rhythm($font-lvl1, ($font-lvl1*1.5));
+                     text-align: center;
+                     display: inline-block;
+                     width: 100%;
+                 }
+                 svg {
+                     display: inline-block;
+                     width: 15%;
+                     height: 25%;
+                     fill: #fff;
+                     &#quote_1 {
+                         position: absolute;
+                         top: 0;
+                         left: -25px;
+                     }
+                     &#quote_2 {
+                         position: absolute;
+                         bottom: 0;
+                         right: -20px;
+                     }
+                 }
+             }
+         }
+         &__besoin {
+             .statistic {
+                 div {
+                     h3 {
+                         text-align: initial;
+                         font-size: 6.875rem;
+                         line-height: 7.1875rem;
+                         padding-top: 0;
+                     }
+                     p {
+                         width: auto;
+                         text-align: initial;
+                     }
+                     .btn {
+                         width: auto;
+                         padding: .5em 1em;
+                         margin: 1em 0 0 0;
+                     }
+                 }
+                 div+div {
+                     p {
+                         text-align: center;
+                     }
+                 }
+             }
+         }
          &__objectif {
              max-width: 100%;
              margin-top: 5em;
@@ -229,9 +314,60 @@
              justify-content: space-around;
              h3 {
                  flex-basis: 40%;
+                 padding-top: 0;
              }
              .text {
                  flex-basis: 50%;
+                 p:first-of-type {
+                     margin-top: 21px;
+                 }
+             }
+         }
+     }
+ }
+ 
+ @media (min-width: 1200px) {
+     .project {
+         &__besoin {
+             .statistic {
+                 div {
+                     .btn {
+                         width: 190px;
+                         padding: 18px 155px;
+                     }
+                 }
+             }
+         }
+     }
+ }
+ 
+ @media (min-width: 1400px) {
+     .project {
+         &__besoin {
+             .statistic {
+                 div {
+                     p {
+                         width: 80%;
+                         margin: 0 auto 0 0;
+                     }
+                 }
+                 div+div {
+                     p {
+                         margin: 2em auto 0 auto;
+                     }
+                 }
+             }
+         }
+     }
+ }
+ 
+ @media (min-width: 1500px) {
+     .project {
+         &__objectif {
+             .text {
+                 p {
+                     max-width: 700px;
+                 }
              }
          }
      }

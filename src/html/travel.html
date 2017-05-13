@@ -12,16 +12,22 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <button id="menu" type="button">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--<li class="menu__home" id="logo">
+                    <a href="../index.html"></a>
+                </li>-->
+        <nav class="sidebar">
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home" id="logo"><a href="../index.html"></a></li>
-                <li class="menu__home__subemenu" ><a href="../index.html">Accueil</a></li>
+
+                <li class="menu__home__subemenu"><a href="../index.html">Accueil</a></li>
                 <li class="menu__agenda"><a href="./agenda.html">Agenda</a>
                     <ul class="menu__agenda__submenu">
                         <li class=" menu__agenda--hover"><a href="./event.html">Événements</a></li>
-                        <li class=" menu__agenda--hover"><a href="./project.html">Projets</a></li>
+                        <li class=" menu__agenda--hover"><a href="./travel.html">Projets</a></li>
                         <li class=" menu__agenda--hover"><a href="./travel.html">Voyages</a></li>
                     </ul>
                 </li>
@@ -48,7 +54,7 @@
             </ul>
         </nav>
     </header>
-    <ul id="menu">
+    <!--<ul id="menu">
         <li>
             <span class="dot" id="goto-1"></span>
         </li>
@@ -60,7 +66,7 @@
         </li>
         <!--<li>
             <span class="dot" id="goto-4"></span>
-        </li>-->
+        </li>
         <li>
             <span class="dot" id="goto-5"></span>
         </li>
@@ -70,31 +76,33 @@
         <li>
             <span class="dot" id="goto-7"></span>
         </li>
-    </ul>
-    <div class="grid2" ></div>
-    <article class="project" id="target-1">
-        <section class="project__title">
-            <h3>Voyages au Burkina Faso</h3>
+    </ul>-->
+    <div class="grid2"></div>
+    <article class="travel" id="target-1">
+        <section class="travel__title">
+            <h3 class="title">Voyages au Burkina Faso</h3>
             <div>
                 <p>À Luengo, du 20 décembre au 30 décembre 2017.</p>
             </div>
         </section>
-        <section class="project__besoin" id="target-2">
-            <h3 class="visuallyhidden">Où ?</span></h3>
+        <section class="travel__map" id="target-2">
+            <h3 class="visuallyhidden">Où ?</span>
+            </h3>
             <div class="map">
                 <div id="map"></div>
                 <div class="map-c">
                     <h4>Voyages à Luengo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id cumque est dolores voluptatibus.orem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id cumque est dolores voluptatibus.orem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id cumque est dolores voluptatibus.orem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id cumque est dolores voluptatibus.orem ipsum dolor sit amet,
+                        consectetur adipisicing elit.</p>
                     <a href="./contact.html" class="btn-1">Nous contacer</a>
                     <a href="./dons.html" class="btn-2">Participer</a>
                 </div>
             </div>
         </section>
-        <section class="project__besoin" id="target-3">
+        <section class="travel__besoin" id="target-3">
             <div class="statistic">
-                <div >
-                    <h4>Pourquoi <span>?</span></h4>
+                <div>
+                    <h3><span>Pourquoi</span> ?</h3>
                     <p>Aider les habitans locaux, à développer leur village avec des besoins primaires telsque l'eau, l'électricité et la nourriture.</p>
                     <a href="./dons.html" class="btn">Faire un don</a>
                 </div>
@@ -124,7 +132,7 @@
                 </div>
             </div>
         </section>
-        <!--<section class="project__stats"  id="target-4">
+        <!--<section class="travel__stats"  id="target-4">
             <div>
                 <div class="stat">
                     <canvas id="asblStat1" width="400" height="400"> </canvas>
@@ -144,14 +152,14 @@
                 <p>Pour mettre en oeuvre ce projet nous avons besoins de certains nombre d'outils pour nous aider à construire le puits.</p>
             </div>
         </section>-->
-        <section class="project__objectif"  id="target-5">
+        <section class="travel__objectif" id="target-5">
             <h3>Notre <span>objectif</span></h3>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi reprehenderit deserunt maiores voluptatem porro tenetur, libero distinctio earum suscipit voluptatibus illum ullam dolor dolore accusantium dicta temporibus ex natus laboriosam.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed velit error, in doloribus neque magnam illum sapiente, impedit atque quas fugiat eveniet officiis architecto vitae ducimus, explicabo sint accusantium.</p>
             </div>
         </section>
-        <section class="project__gallery"  id="target-6">
+        <section class="travel__gallery" id="target-6">
             <h3>En images ...</h3>
             <p>Photographie prise par monsieur XXXXXX durant le voyage humanitaire de 20xx au Burkina Faso</p>
             <div id="sequence" class="seq">
@@ -159,33 +167,33 @@
                     <ul class="seq-canvas">
 
                         <li class="seq-step1 seq-in" id="step1">
-                        <div class="seq-content">
-                            <img src="../images/ajax1.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax1.jpg" alt="">
+                            </div>
                         </li>
 
                         <li class="seq-step2" id="step2">
-                        <div class="seq-content">
-                            <img src="../images/ajax2.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax2.jpg" alt="">
+                            </div>
                         </li>
 
                         <li class="seq-step3" id="step3">
-                        <div class="seq-content">
-                            <img src="../images/ajax3.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax3.jpg" alt="">
+                            </div>
                         </li>
 
                         <li class="seq-step4" id="step4">
-                        <div class="seq-content">
-                            <img src="../images/ajax1.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax1.jpg" alt="">
+                            </div>
                         </li>
 
                         <li class="seq-step5" id="step5">
-                        <div class="seq-content">
-                            <img src="../images/ajax2.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax2.jpg" alt="">
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -200,7 +208,7 @@
 
             </div>
         </section>
-        <section class="project__objectif" id="target-7">
+        <section class="travel__objectif" id="target-7">
             <h3>Notre <span>objectif</span></h3>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi reprehenderit deserunt maiores voluptatem porro tenetur, libero distinctio earum suscipit voluptatibus illum ullam dolor dolore accusantium dicta temporibus ex natus laboriosam.</p>
@@ -216,6 +224,7 @@
 <script src="/js/Chart.js"></script>
 <script src="../js/paralaxNavigation.js"></script>
 <script src="../js/statistics.js"></script>
+<script src="../js/sidebar.js"></script>
 
 <script src="../js/imagesloaded.pkgd.min.js"></script>
 <script src="../js/hammer.min.js"></script>
@@ -224,19 +233,21 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVA_O8C3KixYaKtQ8SbWHItWCEPHXFRao"></script>
 <script>
     var myCenter = new google.maps.LatLng(12.2667, -2.06667);
-    function initialize() {
-    var mapProp = {
-        center: myCenter,
-        zoom: 7,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map"), mapProp);
 
-    var marker = new google.maps.Marker({
-        position: myCenter,
-    });
-    marker.setMap(map);
+    function initialize() {
+        var mapProp = {
+            center: myCenter,
+            zoom: 7,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapProp);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+
 </html>

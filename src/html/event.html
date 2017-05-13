@@ -12,16 +12,21 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <button id="menu" type="button">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--<li class="menu__home" id="logo">
+            <a href="../index.html"></a>
+        </li>-->
+        <nav class="sidebar">
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home" id="logo"><a href="../index.html"></a></li>
-                <li class="menu__home__subemenu" ><a href="../index.html">Accueil</a></li>
+                <li class="menu__home__subemenu"><a href="../index.html">Accueil</a></li>
                 <li class="menu__agenda"><a href="./agenda.html">Agenda</a>
                     <ul class="menu__agenda__submenu">
                         <li class=" menu__agenda--hover"><a href="./event.html">Événements</a></li>
-                        <li class=" menu__agenda--hover"><a href="./project.html">Projets</a></li>
+                        <li class=" menu__agenda--hover"><a href="./event.html">Projets</a></li>
                         <li class=" menu__agenda--hover"><a href="./travel.html">Voyages</a></li>
                     </ul>
                 </li>
@@ -48,7 +53,7 @@
             </ul>
         </nav>
     </header>
-    <ul id="menu">
+    <!--<ul id="menu">
         <li>
             <span class="dot" id="goto-1"></span>
         </li>
@@ -70,38 +75,40 @@
         <li>
             <span class="dot" id="goto-7"></span>
         </li>
-    </ul>
-    <div class="grid2" ></div>
-    <article class="project" id="target-1">
-        <section class="project__title">
-            <h3>Événements marche Adepts</h3>
+    </ul>-->
+    <div class="grid2"></div>
+    <article class="event" id="target-1">
+        <section class="event__title">
+            <h3 class="title">Événements marche Adepts</h3>
             <div>
                 <p>Le 23 Juin de 12h00 à 20h</p>
             </div>
         </section>
-         <section class="project__besoin" id="target-2">
-            <h3 class="visuallyhidden">Où ?</span></h3>
+        <section class="event__map" id="target-2">
+            <h3 class="visuallyhidden">Où ?</span>
+            </h3>
             <div class="map">
                 <div id="map"></div>
                 <div class="map-c">
                     <h4>Où ?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id cumque est dolores voluptatibus.orem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id cumque est dolores voluptatibus.orem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id cumque est dolores voluptatibus.orem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id cumque est dolores voluptatibus.orem ipsum dolor sit amet,
+                        consectetur adipisicing elit.</p>
                     <a href="./contact.html" class="btn-1">Nous contacer</a>
                     <a href="./dons.html" class="btn-2">Participer</a>
                 </div>
             </div>
         </section>
-        <section class="project__objectif" id="target-3">
+        <section class="event__objectif" id="target-3">
             <h3>Au <span>programme</span></h3>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi reprehenderit deserunt maiores voluptatem porro tenetur, libero distinctio earum suscipit voluptatibus illum ullam dolor dolore accusantium dicta temporibus ex natus laboriosam.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed velit error, in doloribus neque magnam illum sapiente, impedit atque quas fugiat eveniet officiis architecto vitae ducimus, explicabo sint accusantium.</p>
             </div>
         </section>
-        <section class="project__besoin" id="target-2">
+        <section class="event__besoin" id="target-2">
             <div class="statistic">
-                <div >
-                    <h4>Dans quel <span>but ?</span></h4>
+                <div>
+                    <h3>Dans quel <span>but</span> ?</h3>
                     <p>Aider l'association a avancer dans ce projet, pour le bien être des personnes en difficulté.</p>
                     <a href="./dons.html" class="btn">Faire un don</a>
                 </div>
@@ -131,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <!--<section class="project__stats"  id="target-4">
+        <!--<section class="event__stats"  id="target-4">
             <div>
                 <div class="stat">
                     <canvas id="asblStat1" width="400" height="400"> </canvas>
@@ -151,14 +158,14 @@
                 <p>Pour mettre en oeuvre ce projet nous avons besoins de certains nombre d'outils pour nous aider à construire le puits.</p>
             </div>
         </section>-->
-        <section class="project__objectif"  id="target-5">
+        <section class="event__objectif" id="target-5">
             <h3>Notre <span>objectif</span></h3>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi reprehenderit deserunt maiores voluptatem porro tenetur, libero distinctio earum suscipit voluptatibus illum ullam dolor dolore accusantium dicta temporibus ex natus laboriosam.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed velit error, in doloribus neque magnam illum sapiente, impedit atque quas fugiat eveniet officiis architecto vitae ducimus, explicabo sint accusantium.</p>
             </div>
         </section>
-        <section class="project__gallery"  id="target-6">
+        <section class="event__gallery" id="target-6">
             <h3>En images ...</h3>
             <p>Photographie prise par monsieur XXXXXX durant le voyage humanitaire de 20xx au Burkina Faso</p>
             <div id="sequence" class="seq">
@@ -166,33 +173,33 @@
                     <ul class="seq-canvas">
 
                         <li class="seq-step1 seq-in" id="step1">
-                        <div class="seq-content">
-                            <img src="../images/ajax1.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax1.jpg" alt="">
+                            </div>
                         </li>
 
                         <li class="seq-step2" id="step2">
-                        <div class="seq-content">
-                            <img src="../images/ajax2.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax2.jpg" alt="">
+                            </div>
                         </li>
 
                         <li class="seq-step3" id="step3">
-                        <div class="seq-content">
-                            <img src="../images/ajax3.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax3.jpg" alt="">
+                            </div>
                         </li>
 
                         <li class="seq-step4" id="step4">
-                        <div class="seq-content">
-                            <img src="../images/ajax1.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax1.jpg" alt="">
+                            </div>
                         </li>
 
                         <li class="seq-step5" id="step5">
-                        <div class="seq-content">
-                            <img src="../images/ajax2.jpg" alt="">
-                        </div>
+                            <div class="seq-content">
+                                <img src="../images/ajax2.jpg" alt="">
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -207,7 +214,7 @@
 
             </div>
         </section>
-        <section class="project__objectif" id="target-7">
+        <section class="event__objectif" id="target-7">
             <h3>Notre <span>objectif</span></h3>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi reprehenderit deserunt maiores voluptatem porro tenetur, libero distinctio earum suscipit voluptatibus illum ullam dolor dolore accusantium dicta temporibus ex natus laboriosam.</p>
@@ -223,6 +230,7 @@
 <script src="/js/Chart.js"></script>
 <script src="../js/paralaxNavigation.js"></script>
 <script src="../js/statistics.js"></script>
+<script src="../js/sidebar.js"></script>
 
 <script src="../js/imagesloaded.pkgd.min.js"></script>
 <script src="../js/hammer.min.js"></script>
@@ -232,19 +240,21 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVA_O8C3KixYaKtQ8SbWHItWCEPHXFRao"></script>
 <script>
     var myCenter = new google.maps.LatLng(12.2667, -2.06667);
-    function initialize() {
-    var mapProp = {
-        center: myCenter,
-        zoom: 7,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map"), mapProp);
 
-    var marker = new google.maps.Marker({
-        position: myCenter,
-    });
-    marker.setMap(map);
+    function initialize() {
+        var mapProp = {
+            center: myCenter,
+            zoom: 7,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapProp);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+
 </html>
