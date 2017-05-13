@@ -96,12 +96,12 @@
         &__besoin {
             padding: 0 2% 3em 5%;
             background-color: #FFF;
-        }
-        h3 {
-            padding-top: 1em;
-            margin-bottom: .5em;
-            span {
-                border-bottom: 10px solid $yellow;
+            h3 {
+                padding-top: 1em;
+                margin-bottom: .5em;
+                span {
+                    border-bottom: 10px solid $yellow;
+                }
             }
         }
         .statistic {
@@ -208,7 +208,7 @@
 @media (min-width:600px) {
     .travel {
         &__besoin {
-            margin: 5em auto 0;
+            //margin: 5em auto 0;
             .statistic {
                 div {
                     p {
