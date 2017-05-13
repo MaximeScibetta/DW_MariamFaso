@@ -231,11 +231,6 @@
                 bottom: 140px;
             }
         }
-    }
-    h3:not(.title) {
-        text-align: center;
-    }
-    .article {
         &__objectif {
             &__container {
                 &__item {
@@ -244,6 +239,9 @@
                 }
             }
         }
+    }
+    h3:not(.title) {
+        text-align: center;
     }
 }
 
@@ -364,6 +362,7 @@
 @media(min-width: 1200px) {
     .article {
         &__intro {
+            margin: 0 5% 3em 5%;
             &__container {
                 margin-left: 50px;
                 h3 {
@@ -395,6 +394,13 @@
                     letter-spacing: 1px;
                 }
             }
+        }
+        &__objectif,
+        &__actu {
+            padding: 0 5% 3em 5%;
+        }
+        &__about {
+            margin: 0 5% 3em 5%;
         }
     }
 }

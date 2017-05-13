@@ -13,11 +13,16 @@
 
 <body>
     <header>
-        <nav>
+        <button id="menu" type="button">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!--<li class="menu__home" id="logo">
+            <a href="./index.html"></a>
+        </li>-->
+        <nav class="sidebar">
             <h2 class="visuallyhidden">Menu de navigation</h2>
             <ul class="menu">
-                <li class="menu__home" id="logo"><a href="../index.html"></a></li>
-                <li class="menu__home__subemenu" ><a href="../index.html">Accueil</a></li>
+                <li class="menu__home__subemenu"><a href="../index.html">Accueil</a></li>
                 <li class="menu__agenda"><a href="./agenda.html">Agenda</a>
                     <ul class="menu__agenda__submenu">
                         <li class=" menu__agenda--hover"><a href="./event.html">Événements</a></li>
@@ -48,7 +53,7 @@
             </ul>
         </nav>
     </header>
-    <ul id="menu">
+    <!--<ul id="menu">
         <li>
             <span class="dot" id="goto-1"></span>
         </li>
@@ -60,7 +65,7 @@
         </li>
         <!--<li>
             <span class="dot" id="goto-4"></span>
-        </li>-->
+        </li>
         <li>
             <span class="dot" id="goto-5"></span>
         </li>
@@ -70,42 +75,42 @@
         <li>
             <span class="dot" id="goto-7"></span>
         </li>
-    </ul>
-    <div class="grid3" ></div>
+    </ul>-->
+    <div class="grid3"></div>
     <article class="agenda" id="target-1">
-        <section class="article__actu">
+        <section class="agenda__actu">
             <h3 id="target-4">Notre <span>agenda</span></h3>
-            <div class="article__actu__event">
-                <h3 class="article__actu__event__title">Nos <span>événements</span></h3>
+            <div class="agenda__actu__event">
+                <h4 class="agenda__actu__event__title">Nos <span>événements</span></h4>
                 <ul class="flex-container">
                     <li class="flex-item">1</li>
                     <li class="flex-item">2</li>
                     <li class="flex-item">3</li>
                     <li class="flex-item">4</li>
-                    <li class="flex-item">5</li>
-                    <li class="flex-item">6</li>
+                    <!--<li class="flex-item">5</li>
+                    <li class="flex-item">6</li>-->
                 </ul>
             </div>
-            <div class="article__actu__voyage">
-                <h3 class="article__actu__voyage__title">Nos <span>voyages</span></h3>
+            <div class="agenda__actu__voyage">
+                <h4 class="agenda__actu__voyage__title">Nos <span>voyages</span></h4>
                 <ul class="flex-container">
                     <li class="flex-item">1</li>
                     <li class="flex-item">2</li>
                     <li class="flex-item">3</li>
                     <li class="flex-item">4</li>
-                    <li class="flex-item">5</li>
-                    <li class="flex-item">6</li>
+                    <!--<li class="flex-item">5</li>
+                    <li class="flex-item">6</li>-->
                 </ul>
             </div>
-            <div class="article__actu__press">
-                <h3 class="article__actu__press__title">Nos <span>projets</span></h3>
+            <div class="agenda__actu__press">
+                <h4 class="agenda__actu__press__title">Nos <span>projets</span></h4>
                 <ul class="flex-container">
                     <li class="flex-item">1</li>
                     <li class="flex-item">2</li>
                     <li class="flex-item">3</li>
                     <li class="flex-item">4</li>
-                    <li class="flex-item">5</li>
-                    <li class="flex-item">6</li>
+                    <!--<li class="flex-item">5</li>
+                    <li class="flex-item">6</li>-->
                 </ul>
             </div>
         </section>
@@ -161,7 +166,8 @@
                         </div>
                         <div class="grid_8 omega">
                             <div class="grid_6 omega">
-                                Lorem ipsum Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                Lorem ipsum Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient
+                                montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                                 <a class="btn" href="http://goo.gl/maps/8GlbZ" target="_blank">Get Direction</a>
                             </div>
                         </div>
@@ -174,7 +180,12 @@
                         </div>
                         <div class="grid_8 omega">
                             <div class="grid_6 omega" id="scroll2">
-                                Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
+                                Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo,
+                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id
+                                nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur
+                                est at lobortis. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.
+                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+                                risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
                             </div>
                         </div>
                     </div>
@@ -194,29 +205,29 @@
                         <div class="info">
                             <h4>TELEPHONE</h4>
                             <p class="information"><span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.</p>
+                            </div>
+                            <div class="grid_8 omega">
+                                <div class="grid_6 omega">0 (123) 456 789</div>
+                            </div>
                         </div>
-                        <div class="grid_8 omega">
-                            <div class="grid_6 omega">0 (123) 456 789</div>
+                        <div class="content grid_12 widget__slide__container__map dn" id="contact-mail">
+                            <div class="info">
+                                <h4>E-MAIL</h4>
+                                <p class="information"><span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.</p>
+                            </div>
+                            <div class="grid_8 omega">
+                                <div class="grid_6 omega"><a href="mailto:mail@loremipsum.com?Subject=Hello" class="btn">mail@loremipsum.com</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content grid_12 widget__slide__container__map dn" id="contact-mail">
-                        <div class="info">
-                            <h4>E-MAIL</h4>
-                            <p class="information"><span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.</p>
-                        </div>
-                        <div class="grid_8 omega">
-                            <div class="grid_6 omega"><a href="mailto:mail@loremipsum.com?Subject=Hello" class="btn">mail@loremipsum.com</a></div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
+                        <div class="clear"></div>
                         <footer class="content grid_12">
                             <div class="btn2">&copy; Copyright</div>
                             <hr/>
                         </footer>
-                    <div class="clear"></div>
+                        <div class="clear"></div>
+                    </div>
                 </div>
-            </div>
-            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         </section>
     </article>
 </body>
@@ -235,5 +246,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVA_O8C3KixYaKtQ8SbWHItWCEPHXFRao"></script>
 
 <script src="../js/carousel.js"></script>
-<script src="../js/widget.js" ></script>
+<script src="../js/widget.js"></script>
+
 </html>
